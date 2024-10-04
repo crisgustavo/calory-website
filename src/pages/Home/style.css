@@ -1,0 +1,32 @@
+.swiper-slide-prev, .swiper-slide-next {
+    opacity: 0;
+}
+
+.item {
+    width: 31%;
+    position: absolute;
+    height: 80%;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    animation-delay: calc( 10 / 4 * var(--delay) );
+
+}
+
+
+.item img{
+    width: 100%;
+    border-radius: 10px;   
+    cursor: pointer;
+}
+
+
+
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -350px;
+    }
+
+}
