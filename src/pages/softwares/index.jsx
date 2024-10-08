@@ -14,6 +14,7 @@ import mercado from '../../assets/midias/produto/b-mercados.jpg'
 import restaurante from '../../assets/midias/produto/b-restaurantes.jpg'
 import plus from '../../assets/images/icons/pls.png'
 import { CatalogItem, CatalogShow, CatalogTitle, Main } from './styles';
+import Footer from '../../components/Footer';
 
 
 function Softwares() {
@@ -80,6 +81,8 @@ function Softwares() {
 
 
             <Whatsapp />
+
+            <Footer />
 
         </>
     )

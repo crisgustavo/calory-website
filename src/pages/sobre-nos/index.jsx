@@ -1,13 +1,17 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import TopBar from "../../components/TopBar";
 
-function Contato(){
+
+function SobreNos() {
     return (
         <>
+            <TopBar />
             <Header />
+
             <Footer />
         </>
     )
 }
 
-export default Contato
+export default SobreNos
