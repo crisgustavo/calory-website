@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import footerbackground from '../../assets/images/footer-bg.jpg'
+
 
 
 
@@ -123,56 +123,4 @@ export const ContentCarroussel = styled.div `
         opacity: .7;
     }
 `
-
-
-
-
-
-export const Footer = styled.div `
-    background-image: url(${footerbackground});
-    width: 100%;
-    background-size: fill;
-
-        &::after{
-            padding-top: 15%;
-            display: block;
-            content: '';
-        }
-`
-
-export const FooterElements = styled.div `
-    width: 100%;
-    display: grid;
-    grid-template-columns: max-content max-content;
-    align-items: center;
-    justify-content: space-between;
-`
-
-export const FooterLogo = styled.img `
-    padding: 30px;
-`
-
-export const FooterLinks = styled.ul `
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-    margin-right: 30px;
-`
-
-export const PageLink = styled.a `
-    color: rgb(192,192,192);
-`
-
-export const FooterSocialMedia = styled.div `
-
-`
-
-export const Whatsapp = styled.img `
-    width: 90px;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 10;
-`
-
 

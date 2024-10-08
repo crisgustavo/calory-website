@@ -1,18 +1,15 @@
 import { useNavigate } from 'react-router-dom'
 
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import TopBar from '../../components/TopBar'
 import Header from '../../components/Header'
-
+import Footer from '../../components/Footer'
 import Whatsapp from '../../components/Whatsapp'
 
 
 
-import { PageLink, FooterLinks, FooterLogo,
-    Footer, FooterSocialMedia, FooterElements,
-    ImgSlider, Content, BudgetInfo,
+import { ImgSlider, Content, BudgetInfo,
     BudgetText, BudgetButton, BudgetTitle,
     ContentInfo, ContentTitle, ContentText,
     ContentShow, ContentBox,
@@ -20,7 +17,6 @@ import { PageLink, FooterLinks, FooterLogo,
 } from "./styles"
 
 
-import footerlogo from '../../assets/images/footer-logo.png'
 import slider1 from '../../assets/midias/banner/Ban-mercado.jpg'
 import slider2 from '../../assets/midias/banner/Ban-certificado.jpg'
 import slider3 from '../../assets/midias/banner/Ban-restaurantes.jpeg'
@@ -34,6 +30,7 @@ import product5 from '../../assets/midias/produto/b-agrovet.jpg'
 import product6 from '../../assets/midias/produto/b-joias.jpg'
 import product7 from '../../assets/midias/produto/b-madeira.jpg'
 import product8 from '../../assets/midias/produto/b-imobiliaria.jpg'
+
 
 
 
@@ -132,24 +129,7 @@ function Home() {
 
             </Content>
 
-
-
-            <Footer>
-                <FooterElements>
-                    <FooterLogo src={footerlogo} />
-
-                    <FooterLinks>
-                        <PageLink>Home</PageLink>
-                        <PageLink>Sobre Nós</PageLink>
-                        <PageLink>Softwares</PageLink>
-                        <PageLink>Contato</PageLink>
-                    </FooterLinks>
-
-                    <FooterSocialMedia>
-
-                    </FooterSocialMedia>
-                </FooterElements>
-            </Footer>
+            <Footer />
 
             <Whatsapp />
 

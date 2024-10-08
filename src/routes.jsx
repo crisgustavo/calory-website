@@ -4,12 +4,12 @@ import Agricola from "./pages/agricola/index.jsx";
 import SoftwareAgrovet from "./pages/softwares/software-agrovet/index.jsx";
 import SoftwareAutocenter from "./pages/softwares/software-autocenter/index.jsx";
 import SoftwareImobiliaria from "./pages/softwares/software-imobiliaria/index.jsx";
-import SoftwareJoias from "./pages/softwares/software-joias/index.jsx";
 import SoftwareLojas from "./pages/softwares/software-lojas/index.jsx";
 import SoftwareMadeireira from "./pages/softwares/software-madeireira/index.jsx";
 import SoftwareMercado from "./pages/softwares/software-mercado/index.jsx";
 import SoftwareRestaurante from "./pages/softwares/software-restaurante/index.jsx";
 import Softwares from "./pages/softwares/index.jsx";
+import SoftwareJoalheria from "./pages/softwares/software-joias/index.jsx";
 
 const router = createBrowserRouter([
     {
@@ -21,35 +21,35 @@ const router = createBrowserRouter([
         element: <Agricola />
     },
     {
-        path: '/software-agovet',
+        path: '/softwares/agrovet',
         element: <SoftwareAgrovet />
     },
     {
-        path: '/software-autocenter',
+        path: '/softwares/autocenter',
         element: <SoftwareAutocenter />
     },
     {
-        path: '/software-imobiliaria',
+        path: '/softwares/imobiliaria',
         element: <SoftwareImobiliaria />
     },
     {
-        path: '/software-joias',
-        element: <SoftwareJoias />
+        path: '/softwares/joalheria',
+        element: <SoftwareJoalheria />
     },
     {
-        path: '/software-lojas',
+        path: '/softwares/lojas',
         element: <SoftwareLojas />
     },
     {
-        path: '/software-madeireira',
+        path: '/softwares/madeireira',
         element: <SoftwareMadeireira />
     },
     {
-        path: '/software-mercado',
+        path: '/softwares/mercado',
         element: <SoftwareMercado />
     },
     {
-        path: '/software-restaurante',
+        path: '/softwares/restaurante',
         element: <SoftwareRestaurante />
     },
     {
