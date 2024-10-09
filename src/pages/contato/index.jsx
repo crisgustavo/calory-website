@@ -12,8 +12,11 @@ import { Container, ContainerH1, ContainerInfo,
         } from "./styles";
 
 function Contato(){
+    window.scrollTo({top: 0, behavior: 'smooth'})
     return (
         <>
+        
+
             <TopBar />
             <Header />
                 <Container>

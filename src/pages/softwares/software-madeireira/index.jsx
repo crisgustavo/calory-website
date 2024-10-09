@@ -17,6 +17,7 @@ import WhatsappBudget from '../../../components/WhatsappBudget';
 import PageContentLeft from '../../../components/PageContentLeft';
 
 function SoftwareMadeireira() {
+    window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>

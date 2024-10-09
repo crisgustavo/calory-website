@@ -6,4 +6,13 @@ export const DefaultWhatsapp = styled.img `
     right: 10px;
     bottom: 10px;
     z-index: 10;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
 `

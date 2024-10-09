@@ -14,10 +14,10 @@ import { PageContentImage } from './styles';
 
 import restauranteimg from '../../../assets/midias/produto/b-restaurantes.jpg'
 import WhatsappBudget from '../../../components/WhatsappBudget';
-import { DefaultPageContentLeft } from '../../../components/PageContentLeft/styles';
 import PageContentLeft from '../../../components/PageContentLeft';
 
 function SoftwareRestaurante() {
+    window.scrollTo({top: 0, behavior: 'smooth'})
 
 
     return (

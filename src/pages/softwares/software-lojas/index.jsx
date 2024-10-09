@@ -17,6 +17,7 @@ import PageContentLeft from '../../../components/PageContentLeft';
 import WhatsappBudget from '../../../components/WhatsappBudget';
 
 function SoftwareLojas() {
+    window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>

@@ -18,6 +18,7 @@ import Footer from '../../components/Footer';
 
 
 function Softwares() {
+    window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>

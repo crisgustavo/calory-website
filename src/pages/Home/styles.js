@@ -122,5 +122,9 @@ export const ContentCarroussel = styled.div `
         color: #4c2cff;
         opacity: .7;
     }
+
+    .item:active {
+        opacity: .5;
+    }
 `
 

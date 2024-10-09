@@ -8,6 +8,7 @@ import { Container, ContainerH1, ContainerH2, ContainerP, LineRow } from "./styl
 
 
 function SobreNos() {
+    window.scrollTo({top: 0, behavior: 'smooth'})
     return (
         <>
             <TopBar />

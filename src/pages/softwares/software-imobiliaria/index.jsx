@@ -18,6 +18,7 @@ import WhatsappBudget from '../../../components/WhatsappBudget';
 
 
 function SoftwareImobiliaria() {
+    window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>
