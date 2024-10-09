@@ -14,11 +14,14 @@ function ListMenu() {
 
     return (
         <DefaultListMenu>
-            <ListItem onClick={() => navigate('/')} >
+            <ListItem>
                 HOME
             </ListItem>
-            <ListItem onClick={() => navigate('/softwares')}>
+            <ListItem>
                 SOFTWARES
+            </ListItem>
+            <ListItem>
+                ANTIVÍRUS
             </ListItem>
             <ListItem>
                 CERTIFICADOS DIGITAIS

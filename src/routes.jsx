@@ -15,6 +15,7 @@ import ClienteLogin from "./pages/area-do-cliente/login/index.jsx";
 import AgricolaLogin from "./pages/agricola/login/index.jsx";
 import SobreNos from "./pages/sobre-nos/index.jsx";
 import ThankYou from "./pages/contato/thankyou.jsx";
+import Antivirus from "./pages/antivirus/index.jsx";
 
 const router = createBrowserRouter([
     {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
     {
         path: '/obrigado',
         element: <ThankYou />
+    },
+    {
+        path: '/antivirus',
+        element: <Antivirus />
     }
     
 ])

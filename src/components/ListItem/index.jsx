@@ -14,6 +14,7 @@ function ListItem({children}) {
         if (address === 'SOFTWARES') {navigate('/softwares')}
         if (address === 'CERTIFICADOS DIGITAIS') {navigate('/certificados-digitais')}
         if (address === 'CONTATO') {navigate('/contato')}
+        if (address === 'ANTIVÍRUS') {navigate('/antivirus')}
     }
 
 

@@ -38,7 +38,7 @@ export const CatalogItem = styled.div `
         z-index: 1;
         align-self: center;
         justify-self: center;
-        margin: 40px 100px ;
+        margin: 170px 100px ;
         visibility: hidden;
         border: none;
     }
