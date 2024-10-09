@@ -14,6 +14,7 @@ import Contato from "./pages/contato/index.jsx";
 import ClienteLogin from "./pages/area-do-cliente/login/index.jsx";
 import AgricolaLogin from "./pages/agricola/login/index.jsx";
 import SobreNos from "./pages/sobre-nos/index.jsx";
+import ThankYou from "./pages/contato/thankyou.jsx";
 
 const router = createBrowserRouter([
     {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
     {
         path: '/sobre-nos',
         element: <SobreNos />
+    },
+    {
+        path: '/obrigado',
+        element: <ThankYou />
     }
     
 ])
