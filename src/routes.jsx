@@ -16,6 +16,7 @@ import AgricolaLogin from "./pages/agricola/login/index.jsx";
 import SobreNos from "./pages/sobre-nos/index.jsx";
 import ThankYou from "./pages/contato/thankyou.jsx";
 import Antivirus from "./pages/antivirus/index.jsx";
+import AgricolaLanding from "./pages/agricola/landing/index.jsx";
 
 const router = createBrowserRouter([
     {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
     {
         path: '/antivirus',
         element: <Antivirus />
+    },
+    {
+        path: '/agricola',
+        element: <AgricolaLanding />
     }
     
 ])
