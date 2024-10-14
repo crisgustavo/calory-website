@@ -7,14 +7,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "db": "node --watch src/database/crud-db.js"
   },
   "dependencies": {
+    "@material/web": "^2.2.0",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
     "cra-template": "^1.2.0",
     "git": "^0.1.5",
     "github": "^14.0.0",
     "lucide": "^0.451.0",
     "lucide-react": "^0.451.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3",
+    "node": "^20.18.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-number-format": "^5.4.2",
@@ -22,7 +29,8 @@
     "react-scripts": "^5.0.1",
     "react-text-mask": "^5.5.0",
     "styled-components": "^6.1.13",
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "vue": "^3.5.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -35,6 +43,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "less": "^4.2.0",
+    "prisma": "^5.20.0",
     "sass-embedded": "^1.79.4",
     "vite": "^5.4.1"
   },

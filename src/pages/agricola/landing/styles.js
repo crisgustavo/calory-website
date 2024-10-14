@@ -1,24 +1,24 @@
 import styled from "styled-components";
 import landingbg from '../../../assets/images/logo_facebook.png'
 import footerbg from '../../../assets/images/footer-bg.jpg'
-import printer from '../../../assets/images/icons/printer.png'
 
 
 
 export const Background = styled.div `
-    background-image: url(${landingbg});
-    width: 100vw;
     height: 100vh;
+    width: calc(100vw - 3%);
+    background-image: url(${landingbg});
     background-repeat: no-repeat;
     background-position: center;
     background-size: 400px;
     opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    top: 100px;
 `
 
 export const Header = styled.div `
     background: linear-gradient(0deg, rgba(51,63,212,1) 0%, rgba(49,49,156,1) 30%, rgba(49,49,156,1) 70%, rgba(51,63,212,1) 100%);
-    position: absolute;
-    top: 0;
     height: 100px;
     width: 100%;
     border: 2px solid rgba(49,49,156,1);
@@ -78,13 +78,12 @@ export const Body = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px 0px;
 `
 
 export const Panel = styled.div `
     display: flex;
-    position: absolute;
-    top: 110px;
-    gap: 5px
+    gap: 5px;
 `
 
 export const Incoming = styled.button `
@@ -153,13 +152,30 @@ export const Print = styled.button `
     }
 
     &:active{
-        opacity: 0.5
+        opacity: 0.5;
     }
 `
 
+export const IncomingPanel = styled.div `
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+    margin: 10px 0px;
+    background-color: rgb(222,222,222);
+    box-shadow: 2px 2px 10px black;
+`
+
+export const OutputPanel = styled.div `
+
+`
+
+export const StockPanel = styled.div `
+
+`
+
 export const Footer = styled.div `
-    position: absolute;
-    top: 515px;
     background-image: url(${footerbg});
     width: 100%;
     height: 118px;

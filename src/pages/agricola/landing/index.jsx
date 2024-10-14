@@ -3,7 +3,10 @@ import {
     UserSettings, UserLogo, UserName,
     CompanyLogo, CompanyName, Exit,
     Body, Panel, Incoming,
-    Output, Stock, Print
+    Output, Stock, Print,
+    IncomingPanel,
+    OutputPanel,
+    StockPanel
 } from './styles'
 import FooterElements from '../../../components/FooterElements'
 
@@ -32,6 +35,36 @@ function AgricolaLanding() {
                     <Stock>Estoque</Stock>
                     <Print><img src={printer} alt="" /></Print>
                 </Panel>
+
+                <IncomingPanel>
+                    <HeaderIncoming>
+                        <PageH1>Entradas</PageH1>
+                        <IncomingFilter>
+                            <FilterH1>Produtos</FilterH1>
+                            <PoductSelect />
+                            <FilterH1>Safra</FilterH1>
+                            <YearSelect />
+                            <MeasureSelect />
+                            <Period />
+                                <PeriodPanel>
+                                    <FilterH1>De:</FilterH1>
+                                    <StartPeriod />
+                                    <FilterH1>Até:</FilterH1>
+                                    <FinalPeriod />
+                                    <Clear />
+                                </PeriodPanel>
+                        </IncomingFilter>
+                    </HeaderIncoming>                   
+                </IncomingPanel>
+
+                <OutputPanel>
+
+                </OutputPanel>
+
+                <StockPanel>
+
+                </StockPanel>
+
             </Body>
 
         <Footer>
