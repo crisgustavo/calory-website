@@ -11,9 +11,9 @@ import Whatsapp from '../../components/Whatsapp'
 
 import { ImgSlider, Content, BudgetInfo,
     BudgetText, BudgetButton, BudgetTitle,
-    ContentInfo, ContentTitle, ContentText,
+    /*ContentInfo, ContentTitle, ContentText,
     ContentShow, ContentBox,
-    ContentCarroussel, ContentH1
+    ContentCarroussel, ContentH1*/
 } from "./styles"
 
 
@@ -22,14 +22,14 @@ import slider2 from '../../assets/midias/banner/Ban-certificado.jpg'
 import slider3 from '../../assets/midias/banner/Ban-restaurantes.jpeg'
 import slider4 from '../../assets/midias/banner/Ban-autocenter.png'
 import slider5 from '../../assets/midias/banner/Ban-empresarial.png'
-import product1 from '../../assets/midias/produto/b-empresarial.jpg'
+/*import product1 from '../../assets/midias/produto/b-empresarial.jpg'
 import product2 from '../../assets/midias/produto/b-mercados.jpg'
 import product3 from '../../assets/midias/produto/b-restaurantes.jpg'
 import product4 from '../../assets/midias/produto/b-autocenter.jpg'
 import product5 from '../../assets/midias/produto/b-agrovet.jpg'
 import product6 from '../../assets/midias/produto/b-joias.jpg'
 import product7 from '../../assets/midias/produto/b-madeira.jpg'
-import product8 from '../../assets/midias/produto/b-imobiliaria.jpg'
+import product8 from '../../assets/midias/produto/b-imobiliaria.jpg'*/
 
 
 
@@ -62,6 +62,7 @@ function Home() {
                 loop='true'
                 effect='coverflow'
                 followFinger='true'
+                style={{'width': '99%'}}
             >
                 {arrayImages.map((item) => (
                     <SwiperSlide key={item.id}>
@@ -72,13 +73,13 @@ function Home() {
 
             <Content>
                 <BudgetInfo>
-                    <BudgetTitle>Ligue agora para <span>(44) 3649-4444</span> ou pelo e-mail <span>atendimento@calory.com.br</span></BudgetTitle>
+                    <BudgetTitle>Ligue agora para <span>(44) 99927-0531</span> ou pelo e-mail <span>atendimento@calory.com.br</span></BudgetTitle>
                     <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
-                    <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
+                    <BudgetButton onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
                 </BudgetInfo>
             </Content>
 
-            <Content>
+            {/*<Content>
                 <ContentInfo>
                     <ContentBox>
                         <ContentTitle>Saiba mais sobre os <a href=''>Softwares</a> Calory</ContentTitle>
@@ -129,7 +130,7 @@ function Home() {
                 </ContentInfo>
 
             </Content>
-
+            */}
             <Footer />
 
             <Whatsapp />

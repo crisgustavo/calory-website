@@ -19,7 +19,7 @@ function Antivirus() {
                 <CatalogTitle>Conheça nossos Antivírus!</CatalogTitle>
                 <CatalogShow>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Standard', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Standard', '_blank')}/>
                         <img src={kasperstandard} alt="Kaspersky Standard" />
                         <h1>Kaspersky Standard</h1>
                         <h3>Inclui tecnologias de segurança de última geração, protegendo você de ameaças 
@@ -29,7 +29,7 @@ function Antivirus() {
                             macOS, Android e iOS.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Plus', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Plus', '_blank')}/>
                         <img src={kasperplus} alt="Kaspersky Plus" />
                         <h1>Kaspersky Plus</h1>
                         <h3>Oferece cibersegurança de nível internacional e ferramentas para incrementar seu 
@@ -39,7 +39,7 @@ function Antivirus() {
                             VPN ilimitada. Compatível com Windows, macOS, Android e iOS.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Premium', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Premium', '_blank')}/>
                         <img src={kasperpremium} alt="Kaspersky Premium" />
                         <h1>Kaspersky Premium</h1>
                         <h3>Fornece segurança de classe mundial, ferramentas de impulsionamento de 
@@ -52,7 +52,7 @@ function Antivirus() {
                             Android e iOS.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+"  onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Small%20Office', '_blank')} />
+                        <img className='plus' src={plus} alt="+"  onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Small%20Office', '_blank')} />
                         <img src={kaspersmall} alt="Kaspersky Small Office" />
                         <h1>Kaspersky Small Office</h1>
                         <h3>Criado especificamente para empresas com 5 a 50 computadores, o Kaspersky Small 
@@ -62,7 +62,7 @@ function Antivirus() {
                             financeira, ransomware e perda de dados.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Standard%20Mobile', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20antivírus%20Kaspersky%20Standard%20Mobile', '_blank')}/>
                         <img src={kaspermobile} alt="Kaspersky Standard Mobile" />
                         <h1>Kaspersky Standard Mobile</h1>
                         <h3>Inclui tecnologias de segurança de última geração – protegendo você de ameaças 

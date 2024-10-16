@@ -13,4 +13,10 @@ export const DefaultContainerLogo = styled.img `
     &:active {
         opacity: .5;
     }
+
+    @media(max-width: 800px) {
+        width: 70%;
+        margin-top: -7%;
+        margin-bottom: -3%;
+    }
 `

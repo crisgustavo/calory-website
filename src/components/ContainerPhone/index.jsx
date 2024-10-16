@@ -6,15 +6,14 @@ function ContainerPhone() {
         <DefaultContainerPhone>
             <img src={phoneicon} alt="" />
             <h3>Atendimento</h3>
-            <p><span>Palotina</span>
-                <br />(44) 3649-4444
-                <br />
-                <br /><span>Pérola</span>
-                <br />(44) 3636-2883
-                <br />
-                <br /><span>Celulares</span>
+            <div>
+              <p><span>Celulares</span>
                 <br />(44) 99993-9313
                 <br />(44) 99927-0531</p>
+              <p><span>Fixos</span>
+                <br />(44) 3649-4444
+                <br />(44) 3636-2883</p>
+            </div>
         </DefaultContainerPhone>
     )
 }

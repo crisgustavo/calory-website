@@ -34,7 +34,7 @@ function CertificadosDigitais() {
                 <CatalogTitle>Certificados e-CNPJ</CatalogTitle>
                 <CatalogShow>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos', '_blank')}/>
                         <img src={c1ecnpj} alt="e-CNPJ A3 de 3 anos" />
                         <h1>e-CNPJ A3 de 3 anos</h1>
                         <h3>O e-CNPJ A3 tem validade de 03 anos, é indicado para quem quer identificar uma 
@@ -43,14 +43,14 @@ function CertificadosDigitais() {
                             armazenamento do Certificado Digital.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A1', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A1', '_blank')}/>
                         <img src={c2ecnpj} alt="e-CNPJ A1" />
                         <h1>e-CNPJ A1</h1>
                         <h3>O e-CNPJ A1 tem validade de 12 meses, sendo armazenado diretamente no computador. 
                             Tem menor custo e é indicado para identificar pessoas jurídicas.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano', '_blank')}/>
                         <img src={c3ecnpj} alt="e-CNPJ A3 de 1 ano" />
                         <h1>e-CNPJ A3 de 1 ano</h1>
                         <h3>O e-CNPJ A3 tem validade de 01 ano, é indicado para quem quer identificar uma 
@@ -59,7 +59,7 @@ function CertificadosDigitais() {
                             armazenamento do Certificado Digital.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano%20em%20cartão', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano%20em%20cartão', '_blank')}/>
                         <img src={c4ecnpj} alt="e-CNPJ A3 de 1 ano em cartão" />
                         <h1>e-CNPJ A3 de 1 ano em cartão</h1>
                         <h3>O e-CNPJ A3 com cartão tem validade de 01 ano, é indicado para quem quer 
@@ -67,7 +67,7 @@ function CertificadosDigitais() {
                             Federal. IMPORTANTE: é necessário possuir uma leitora de cartão compatível.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano%20em%20cartão%20com%20leitora', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano%20em%20cartão%20com%20leitora', '_blank')}/>
                         <img src={c5ecnpj} alt="e-CNPJ A3 de 1 ano em cartão + leitora" />
                         <h1>e-CNPJ A3 de 1 ano em cartão + leitora</h1>
                         <h3>O e-CNPJ A3 em Cartão + Leitora tem validade de 01 ano, é indicado para quem quer 
@@ -77,7 +77,7 @@ function CertificadosDigitais() {
                             Certificado Digital em cartão e utilizará uma única leitora.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano%20em%20token', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%201%20ano%20em%20token', '_blank')}/>
                         <img src={c6ecnpj} alt="e-CNPJ A3 de 1 ano em token" />
                         <h1>e-CNPJ A3 de 1 ano em token</h1>
                         <h3>O e-CNPJ A3 com token tem validade de 01 ano, é indicado para quem quer 
@@ -86,7 +86,7 @@ function CertificadosDigitais() {
                             fácil portabilidade e usabilidade, basta conectá-lo na porta USB do computador.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos%20em%20cartão', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos%20em%20cartão', '_blank')}/>
                         <img src={c7ecnpj} alt="e-CNPJ A3 de 3 anos em cartão" />
                         <h1>e-CNPJ A3 de 3 anos em cartão</h1>
                         <h3>O e-CNPJ A3 com cartão tem validade de 03 anos, é indicado para quem quer 
@@ -94,7 +94,7 @@ function CertificadosDigitais() {
                             Federal. IMPORTANTE: é necessário possuir uma leitora de cartão compatível.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos%20em%20cartão%20com%20leitora', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos%20em%20cartão%20com%20leitora', '_blank')}/>
                         <img src={c8ecnpj} alt="e-CNPJ A3 de 3 anos em cartão + leitora" />
                         <h1>e-CNPJ A3 de 3 anos em cartão + leitora</h1>
                         <h3>O e-CNPJ A3 em Cartão + Leitora tem validade de 03 anos, é indicado para quem quer 
@@ -104,7 +104,7 @@ function CertificadosDigitais() {
                             Certificado Digital em cartão e utilizará uma única leitora.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos%20em%20token', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CNPJ%20A3%20de%203%20anos%20em%20token', '_blank')}/>
                         <img src={c9ecnpj} alt="e-CNPJ A3 de 3 anos em token" />
                         <h1>e-CNPJ A3 de 3 anos em token</h1>
                         <h3>O e-CNPJ A3 com token tem validade de 03 anos, é indicado para quem quer 
@@ -117,14 +117,14 @@ function CertificadosDigitais() {
                 <CatalogTitle>Certificados e-CPF</CatalogTitle>
                 <CatalogShow>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A1', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A1', '_blank')}/>
                         <img src={c1ecpf} alt="e-CPF A1" />
                         <h1>e-CPF A1</h1>
                         <h3>O e-CPF A1 tem validade de 12 meses, sendo armazenado diretamente no computador. 
                             Tem menor custo e é indicado para identificar pessoas físicas.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano', '_blank')}/>
                         <img src={c2ecpf} alt="e-CPF A3 de 1 ano" />
                         <h1>e-CPF A3 de 1 ano</h1>
                         <h3>O e-CPF A3 tem validade de 01 ano, indicado para identificar e autenticar uma 
@@ -132,7 +132,7 @@ function CertificadosDigitais() {
                             aderente a legislação da ICP-Brasil para armazenamento do Certificado Digital.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano%20em%20cartão', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano%20em%20cartão', '_blank')}/>
                         <img src={c3ecpf} alt="e-CPF A3 de 1 ano em cartão" />
                         <h1>e-CPF A3 de 1 ano em cartão</h1>
                         <h3>O e-CPF A3 com cartão tem validade de 01 ano, indicado para identificar e 
@@ -140,7 +140,7 @@ function CertificadosDigitais() {
                             uma leitora de cartão compatível.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano%20em%20cartão%20com%20leitora', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano%20em%20cartão%20com%20leitora', '_blank')}/>
                         <img src={c4ecpf} alt="e-CPF A3 de 1 ano em cartão + leitora" />
                         <h1>e-CPF A3 de 1 ano em cartão + leitora</h1>
                         <h3>O e-CPF A3 em Cartão + Leitora tem validade de 01 ano, é indicado para 
@@ -149,7 +149,7 @@ function CertificadosDigitais() {
                             Digital em cartão e utilizará uma única leitora.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano%20em%20token', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%201%20ano%20em%20token', '_blank')}/>
                         <img src={c5ecpf} alt="e-CPF A3 de 1 ano em token" />
                         <h1>e-CPF A3 de 1 ano em token</h1>
                         <h3>O e-CPF A3 em token com validade de 01 ano, é indicado para identificar e 
@@ -158,7 +158,7 @@ function CertificadosDigitais() {
                             conectá-lo na porta USB do computador.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos', '_blank')}/>
                         <img src={c6ecpf} alt="e-CPF A3 de 3 anos" />
                         <h1>e-CPF A3 de 3 anos</h1>
                         <h3>O e-CPF A3 tem validade de 03 anos, indicado para identificar e autenticar uma 
@@ -166,7 +166,7 @@ function CertificadosDigitais() {
                             aderente a legislação da ICP-Brasil para armazenamento do Certificado Digital.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos%20em%20cartão', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos%20em%20cartão', '_blank')}/>
                         <img src={c7ecpf} alt="e-CPF A3 de 3 anos em cartão" />
                         <h1>e-CPF A3 de 3 anos em cartão</h1>
                         <h3>O e-CPF A3 com cartão tem validade de 03 anos, indicado para identificar e 
@@ -174,7 +174,7 @@ function CertificadosDigitais() {
                             uma leitora de cartão compatível.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos%20em%20cartão%20com%20leitora', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos%20em%20cartão%20com%20leitora', '_blank')}/>
                         <img src={c8ecpf} alt="e-CPF A3 de 3 anos em cartão + leitora" />
                         <h1>e-CPF A3 de 3 anos em cartão + leitora</h1>
                         <h3>O e-CPF A3 em Cartão + Leitora tem validade de 03 anos, é indicado para 
@@ -183,7 +183,7 @@ function CertificadosDigitais() {
                             igital em cartão e utilizará uma única leitora.</h3>
                     </CatalogItem>
                     <CatalogItem>
-                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos%20em%20token', '_blank')}/>
+                        <img className='plus' src={plus} alt="+" onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Gostaria%20de%20adquirir%20o%20certificado%20e-CPF%20A3%20de%203%20anos%20em%20token', '_blank')}/>
                         <img src={c9ecpf} alt="e-CPF A3 de 3 anos em token" />
                         <h1>e-CPF A3 de 3 anos em token</h1>
                         <h3>O e-CPF A3 em token com validade de 03 anos, é indicado para identificar e 

@@ -7,13 +7,15 @@ import {
 } from './styles'
 import ContainerLogo from '../../../components/ContainerLogo'
 import FooterElements from '../../../components/FooterElements'
-import AgricolaValidade from './loginvalidation'
+import { useEffect, useState } from 'react'
 import { Eye, EyeOff } from 'lucide-react'
-import React, { useState } from 'react'
-//import LoginValidation from './validation'
+import { useNavigate } from 'react-router-dom'
+import GetUsuários from '../../../scripts/getUsuarios'
 
 
 function AgricolaLogin() {
+
+    const navigate = useNavigate();
 
     const [isShow, setIsShow] = useState(false);
 
@@ -24,36 +26,31 @@ function AgricolaLogin() {
 
     const userChange = (event) => {setUserValue(event.target.value)}
     const passwordChange = (event) => {setPasswordValue(event.target.value)}
-   
-    let login = ''
-    let senha = ''
 
-    function ListUsers() {
-    /*    let [ users, setUsers ] = useState([])
-    
-        useEffect(() => {
-            async function getUsers() {
-                const { data } = await app.get('/usuarios', async (req,res) => {
-                    connection.getConnection(() => {
-                        connection.query('SELECT * FROM usuarios')
-                    })
-                })
-                
-                setUsers(data)
+        let userList = []
+        userList = GetUsuários(userList)
+
+
+    function validaLogin(userValue, passwordValue) {
+        let passwordEncoded = btoa(passwordValue)
+
+        const id = userList.filter((user) => {
+            if (user.login == userValue && user.senha == passwordEncoded) {
+                return true
+            } else {
+                return false
             }
-            
-            getUsers();
-        }, [])
+        })
 
-        //login = users.login
-        //senha = users.senha
-
-        console.log('login: '+login, 'senha '+senha)
-        console.log(users)
-    */}
-
-    function validaLogin() {
-        console.log('hello world')
+        if (id.length !== 0) {
+            const idcatch = id.map(item => {
+                idclifor = item.id_clifor
+                nome = item.nome
+            })
+            navigate('/agricola')
+        } else {
+            alert('Usuário ou senha incorretos. Tente novamente.')
+        }
     }
         
     return (
@@ -80,7 +77,7 @@ function AgricolaLogin() {
                                     {isShow && <EyeOff size={18} />}                                    
                                 </EyeIcon>
                             </Password>
-                            <Button type='button' onClick={AgricolaValidade()}>Login</Button>
+                            <Button type='button' onClick={() => validaLogin(userValue, passwordValue, userList)}>Login</Button>
                         </LoginContent>
                     </Login>
 
@@ -98,3 +95,6 @@ function AgricolaLogin() {
 }
 
 export default AgricolaLogin
+
+export let idclifor
+export let nome

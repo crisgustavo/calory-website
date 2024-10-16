@@ -19,4 +19,12 @@ export const DefaultFooterSocialMedia = styled.div `
             opacity: .5;
         }
     }
+
+    @media(max-width: 800px) {
+        margin-right: 15px;
+
+        img {
+            width: 20px;
+        }
+    }
 `

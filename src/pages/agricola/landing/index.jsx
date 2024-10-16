@@ -6,7 +6,12 @@ import {
     Output, Stock, Print,
     IncomingPanel,
     OutputPanel,
-    StockPanel
+    StockPanel,
+    HeaderIncoming,
+    PageH1, IncomingFilter, FilterH1,
+    ProductSelect, YearSelect, MeasureSelect,
+    Period, PeriodPanel, StartPeriod,
+    FinalPeriod, Clear
 } from './styles'
 import FooterElements from '../../../components/FooterElements'
 
@@ -14,16 +19,80 @@ import user from '../../../assets/images/icons/user1.png'
 import company from '../../../assets/images/icons/company1.png'
 import printer from '../../../assets/images/icons/printer.png'
 
+import { idclifor, nome } from '../login'
+import { useEffect, useState } from 'react'
+import api from '../../../services/api'
+import GetEmpresa from '../../../scripts/getEmpresa'
+import GetProdutos from '../../../scripts/getProdutos'
+
+
 function AgricolaLanding() {
+
+    const cliforimported = idclifor
+    const nomeimported = nome
+
+    let cliforid = ''
+    let fantasia = ''
+    let id = ''
+    let companyname = '' 
+
+
+    let [ clifor, setClifor ] = useState ([])
+
+    useEffect(() => {
+        async function getClifor() {
+            const {data} = await api.get('/clifor')
+
+            setClifor(data)
+        }
+
+        getClifor()
+    }, [])
+
+    const cliforkey = clifor.filter((id) => {
+        if (id.idclifor == cliforimported && id.nome == nomeimported) {
+            return true
+        } else {
+            return false
+        }
+    }) 
+
+    const idcliforcatch = cliforkey.map(item => {
+        cliforid = item.idclifor
+        fantasia = item.fantasia
+        id = item.idempresa
+    })
+
+    let empresaList = []
+    empresaList = GetEmpresa(empresaList)
+    
+
+    const empresakey = empresaList.filter(item => {
+        if (item.idempresa == id){
+            return true
+        } else {
+            return false
+        }
+    })
+
+    const empresacatch = empresakey.map(item => {
+        companyname = item.fantasia
+    })
+
+    let productList = []
+    productList = GetProdutos(productList)
+    console.log(productList)
+
+
     return (
         <>
         <Background />
             <Header>
                 <UserSettings>
                     <UserLogo src={user}/>
-                    <UserName>User</UserName>
+                    <UserName>{fantasia}</UserName>
                     <CompanyLogo src={company}/>
-                    <CompanyName>Company</CompanyName>
+                    <CompanyName>{companyname}</CompanyName>
                 </UserSettings> 
                 <Exit>Sair</Exit>
             </Header>
@@ -41,7 +110,7 @@ function AgricolaLanding() {
                         <PageH1>Entradas</PageH1>
                         <IncomingFilter>
                             <FilterH1>Produtos</FilterH1>
-                            <PoductSelect />
+                            <ProductSelect />
                             <FilterH1>Safra</FilterH1>
                             <YearSelect />
                             <MeasureSelect />

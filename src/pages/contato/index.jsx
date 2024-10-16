@@ -36,7 +36,7 @@ function Contato(){
                         <input type="hidden" name="_captcha" value="false"></input>
                         <input type="text" name="_honey" style={{display: 'none'}}></input>
                     </FormEmail>
-
+                {/*
                     <Localization>
                     <ContainerMapLeft>
                         <ContainerH1 style={{textAlign: "center"}}>Palotina</ContainerH1>
@@ -59,6 +59,8 @@ function Contato(){
                         </ContainerP>
                     </ContainerMapRight>
                 </Localization>
+
+                */}
                 </Container>
 
                 

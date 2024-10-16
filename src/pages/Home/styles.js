@@ -9,7 +9,7 @@ export const ImgSlider = styled.img `
 `
 
 export const Content = styled.div `
-
+    width: 100%;
 `
 
 export const BudgetInfo = styled.div `
@@ -22,6 +22,7 @@ export const BudgetInfo = styled.div `
     padding: 1% 10%;
     gap: 5px;
     justify-content: center;
+    
 `               
 
 export const BudgetTitle = styled.h3 `
@@ -32,11 +33,13 @@ export const BudgetTitle = styled.h3 `
         color: #4c2cff;
         font-weight: 900;
     }
+
 `
 
 export const BudgetText = styled.p `
     grid-area: p;
     text-align: center;
+
 `
 
 export const BudgetButton = styled.button `
@@ -65,7 +68,7 @@ export const BudgetButton = styled.button `
 `
 
 export const ContentInfo = styled.div `
-
+    width: 100%;
 `
 
 export const ContentBox = styled.div `

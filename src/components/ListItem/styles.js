@@ -19,4 +19,10 @@ export const DefaultListItem = styled.li `
     &:active {
         opacity: .5;
     }
+
+    @media(max-width: 800px) {
+        font-size: 100%;
+        width: max-content;
+        padding: 0% 20%;
+    }
 `

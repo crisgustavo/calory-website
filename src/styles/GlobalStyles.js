@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        width:auto;
+        width:100%;
     }
    
 `

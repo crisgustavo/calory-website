@@ -3,7 +3,6 @@ import Home from '../../pages/Home';
 
 
 import ListItem from "../ListItem";
-import ListItemTrial from "../ListItemTrial";
 import { DefaultListMenu } from "./styles";
 
 
@@ -29,9 +28,9 @@ function ListMenu() {
             <ListItem>
                 CONTATO
             </ListItem>
-            <ListItemTrial>
+            {/*<ListItem>
                 EXPERIMENTE GRÁTIS!
-            </ListItemTrial>
+            </ListItem>*/}
         </DefaultListMenu>
     )
 }

@@ -56,13 +56,13 @@ function SobreNos() {
                             <ContainerH2>Visão</ContainerH2>
                             <ContainerP>Tornar-se uma empresa reconhecida nacionalmente pela excelência na prestação de serviços.</ContainerP>
                             <ContainerH2>Valores</ContainerH2>
-                            <ContainerP>1-Integridade. <br />
-                                2-Comprometimento.<br />
-                                3-Valorização Humana.< br/>
-                                4-Superação de Resultados. <br />
-                                5-Melhoria contínua. <br />
-                                6-Inovação. <br />
-                                7-Sustentabilidade.</ContainerP>
+                            <ContainerP>1 - Integridade. <br />
+                                2 - Comprometimento.<br />
+                                3 - Valorização Humana.< br/>
+                                4 - Superação de Resultados. <br />
+                                5 - Melhoria contínua. <br />
+                                6 - Inovação. <br />
+                                7 - Sustentabilidade.</ContainerP>
                 </Container>
 
                 <Whatsapp />

@@ -15,6 +15,10 @@ export const CatalogTitle = styled.h1 `
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(182,181,181,1) 50%, rgba(255,255,255,0) 100%);
     color: #4c2cff;
+
+    @media(max-width: 800px){
+        font-size: 140%;
+    }
 `
 
 export const CatalogShow = styled.div `
@@ -25,6 +29,11 @@ export const CatalogShow = styled.div `
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @media(max-width: 800px){
+        grid-template-columns: 1fr ;
+        width: 80%;
+    }
 `
 
 export const CatalogItem = styled.div `

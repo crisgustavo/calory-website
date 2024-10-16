@@ -165,6 +165,64 @@ export const IncomingPanel = styled.div `
     margin: 10px 0px;
     background-color: rgb(222,222,222);
     box-shadow: 2px 2px 10px black;
+    justify-content: center;
+    visibility: hidden;
+`
+
+export const HeaderIncoming = styled.div `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const PageH1 = styled.h1 `
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(36,34,193,1);
+`
+
+export const IncomingFilter = styled.div `
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    margin-top: 20px;
+`
+
+export const FilterH1 = styled.h1 `
+    font-size: 25px;
+`
+
+export const ProductSelect = styled.select `
+
+`
+
+export const YearSelect = styled.select `
+
+`
+
+export const MeasureSelect = styled.select `
+
+`
+
+export const Period = styled.button `
+
+`
+
+export const PeriodPanel = styled.div `
+
+`
+
+export const StartPeriod = styled.input `
+
+`
+
+export const FinalPeriod = styled.input `
+
+`
+
+export const Clear = styled.button `
+
 `
 
 export const OutputPanel = styled.div `

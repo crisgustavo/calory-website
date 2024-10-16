@@ -6,8 +6,7 @@ export const DefaultContainerEmail = styled.div`
         display: grid;
             img {
                 grid-area: img;
-                width: 80%;
-                margin-left: 5%;
+                width: 90%;
             };
             h3 {
                 grid-area: h3;
@@ -32,5 +31,20 @@ export const DefaultContainerEmail = styled.div`
                 opacity: 50%;
             }
         }
+    }
+
+    @media(max-width: 800px) {
+            
+            img {
+                margin-left: 5%;
+            }
+            h3 {
+                font-size: 90%;
+            }
+            p {
+                font-size: 70%;
+            }
+
+            margin-left: 1%;
     }
 `
