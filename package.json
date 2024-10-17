@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "publish": "dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "db": "node --watch src/database/crud-db.js"
