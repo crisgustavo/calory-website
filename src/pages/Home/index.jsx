@@ -18,7 +18,7 @@ import slider1 from '../../assets/midias/banner/Ban-mercado.jpg'
 import slider2 from '../../assets/midias/banner/Ban-certificado.jpg'
 import slider3 from '../../assets/midias/banner/Ban-restaurantes.jpeg'
 import slider4 from '../../assets/midias/banner/Ban-autocenter.png'
-import slider5 from '../../assets/midias/banner/Ban-empresa.png'
+import slider5 from '../../assets/midias/banner/Ban-empresarial.png'
 
 
 
