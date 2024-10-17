@@ -4,6 +4,7 @@ import TopBar from "../../components/TopBar";
 import { Container, ContainerH1, ContainerInfo, 
          FormEmail, InputEmail, InputName, 
          InputText, Button, 
+         ContainerName, ContainerEmail,
          Localization,
          ContainerMapLeft,
          ContainerP,
@@ -22,10 +23,15 @@ function Contato(){
                 <Container>
                     <FormEmail target="_blank" action="https://formsubmit.co/atendimento@calory.com.br" method="POST">
                         <ContainerInfo>
-                        <ContainerH1>Nome:</ContainerH1>
-                        <ContainerH1>E-mail:</ContainerH1>
-                        <InputName type="text" name="name" placeholder="Digite seu nome" required></InputName>
-                        <InputEmail type="email" name="email" placeholder="Digite seu e-mail" required></InputEmail>
+                            <ContainerName>
+                            <ContainerH1>Nome:</ContainerH1>
+                            <InputName type="text" name="name" placeholder="Digite seu nome" required></InputName>
+                            </ContainerName>
+                            
+                            <ContainerEmail>
+                            <ContainerH1>E-mail:</ContainerH1>
+                            <InputEmail type="email" name="email" placeholder="Digite seu e-mail" required></InputEmail>
+                            </ContainerEmail>
                         </ContainerInfo>
                         <ContainerH1>Mensagem:</ContainerH1>
                         <InputText type="text" name="message" placeholder="Digite sua mensagem para nós" required></InputText>

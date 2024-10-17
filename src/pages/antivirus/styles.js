@@ -15,16 +15,24 @@ export const CatalogTitle = styled.h1 `
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(182,181,181,1) 50%, rgba(255,255,255,0) 100%);
     color: #4c2cff;
+
+    @media(max-width: 800px) {
+        font-size: 140%;
+    }
 `
 
 export const CatalogShow = styled.div `
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @media(max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px
+    }
 `
 
 export const CatalogItem = styled.div `

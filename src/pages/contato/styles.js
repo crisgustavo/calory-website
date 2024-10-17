@@ -12,6 +12,20 @@ export const ContainerInfo = styled.div `
     justify-content: center;
     padding: 0px 20px 0px 20px;
     margin-bottom: 40px;
+
+    @media(max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+`
+
+export const ContainerName = styled.div `
+
+`
+
+export const ContainerEmail = styled.div `
+
 `
 
 export const FormEmail = styled.form `
@@ -24,6 +38,10 @@ export const ContainerH1 = styled.h1 `
     font-size: 25px;
     margin-bottom: 10px;
     color: #4c2cff;
+
+    @media(max-width: 800px) {
+        font-size: 110%;
+    }
 `
 
 export const InputName = styled.input `
@@ -54,6 +72,10 @@ export const InputText = styled.textarea `
     align-items: start;
     text-align: left;
     margin-bottom: 20px;
+
+    @media(max-width: 800px) {
+        width: 110%;
+    }
 `
 
 export const Button = styled.button `
@@ -117,4 +139,8 @@ export const ContainerThankyou = styled.div `
 export const ContainerPThankyou = styled.p `
     font-size: 40px;
     text-align: center;
+
+    @media(max-width: 800px) {
+        font-size: 150%;
+    }
 `
