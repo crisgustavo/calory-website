@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import TopBar from "../../components/TopBar";
+import Whatsapp from "../../components/Whatsapp";
 import { Container, ContainerH1, ContainerInfo, 
          FormEmail, InputEmail, InputName, 
          InputText, Button, 
@@ -72,6 +73,8 @@ function Contato(){
                 
 
             <Footer />
+
+            <Whatsapp />
         </>
     )
 }
