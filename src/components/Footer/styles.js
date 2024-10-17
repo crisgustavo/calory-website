@@ -8,7 +8,7 @@ export const ImgBackgroundFooter = styled.img `
 
     @media(max-width: 800px) {
         width: 100%;
-        height: 20%;
+        height: 25%;
     }
 `
 
