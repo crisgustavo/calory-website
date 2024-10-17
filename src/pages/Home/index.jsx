@@ -5,15 +5,17 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import TopBar from '../../components/TopBar'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Whatsapp from '../../components/Whatsapp'
+//import Whatsapp from '../../components/Whatsapp'
 
 
 
 import { ImgSlider, Content, BudgetInfo,
     BudgetText, BudgetButton, BudgetTitle,
+    DefaultWhatsapp,
+    ButtonWhatsapp
 } from "./styles"
 
-
+import whatsappicon from '../../assets/images/icons/whatsapp.png'
 import slider1 from '../../assets/midias/banner/Ban-mercado.jpg'
 import slider2 from '../../assets/midias/banner/Ban-certificado.jpg'
 import slider3 from '../../assets/midias/banner/Ban-restaurantes.jpeg'
@@ -65,14 +67,15 @@ function Home() {
                 <BudgetInfo>
                     <BudgetTitle>Ligue agora para <span>(44) 99927-0531</span> ou pelo e-mail <span>atendimento@calory.com.br</span></BudgetTitle>
                     <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
-                    <BudgetButton onClick={() => window.open('https://wa.me/5544999270531?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
+                    <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
+                    <ButtonWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
                 </BudgetInfo>
             </Content>
 
             
             <Footer />
 
-            <Whatsapp />
+            <DefaultWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
 
         </>
     )

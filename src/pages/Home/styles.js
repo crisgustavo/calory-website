@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 
 
-
 export const ImgSlider = styled.img `
     width: 80%;
     margin: 1% 10% 2% 10%;
@@ -65,6 +64,27 @@ export const BudgetButton = styled.button `
         font-size: 115%;
     }
 
+    @media(max-width: 800px) {
+        width: 0px;
+        visibility: hidden;
+        
+        &:hover{
+        width: 0px;
+    }
+
+    }
+
+`
+
+export const ButtonWhatsapp = styled.img `
+    width: 0px;
+    grid-area: bt;
+    align-self: center;
+    justify-self: center;
+    
+    @media(max-width: 800px) {
+        width: 90%;
+    }
 `
 
 export const ContentInfo = styled.div `
@@ -131,3 +151,23 @@ export const ContentCarroussel = styled.div `
     }
 `
 
+export const DefaultWhatsapp = styled.img `
+    width: 90px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 10;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    @media(max-width: 800px) {
+        visibility: hidden;
+    }
+`
