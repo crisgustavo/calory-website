@@ -12,4 +12,8 @@ export const DefaultWhatsasppBudget = styled.img `
         opacity: 0.5;
     }
 
+    @media(max-width: 800px) {
+        width: 100%;        
+    }
+
 `

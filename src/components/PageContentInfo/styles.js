@@ -6,4 +6,7 @@ export const DefaultPageContentInfo = styled.div `
     display: flex;
     gap: 20px;
 
+    @media(max-width: 800px) {
+        flex-direction: column ;
+    }
 `

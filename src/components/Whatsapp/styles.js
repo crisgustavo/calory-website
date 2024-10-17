@@ -17,6 +17,6 @@ export const DefaultWhatsapp = styled.img `
     }
 
     @media(max-width: 800px) {
-        width: 50px;
+        width: 50px;        
     }
 `
