@@ -37,7 +37,7 @@ export const FormEmail = styled.form `
 export const ContainerH1 = styled.h1 `
     font-size: 25px;
     margin-bottom: 10px;
-    color: #4c2cff;
+    color: rgba(39,70,166,1);
 
     @media(max-width: 800px) {
         font-size: 110%;
@@ -82,19 +82,23 @@ export const Button = styled.button `
     border: 1px #ffffff;
     border-radius: 25px;
     padding: 10px 20px;
-    background: linear-gradient(180deg, #ffffff7c 0%, #9c9c9c 100%);
+    background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
+    //background: linear-gradient(180deg, #ffffff7c 0%, #9c9c9c 100%);
     color: #FFFFFF;
     text-align: center;
     min-width: max-content;
     font-size: 25px;
 
     &:hover{
-        background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
-        cursor: pointer;
+        //background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
+        
+        /*cursor: pointer;
         transition: 0.5s;
         transition-property: font-size;
         font-size: 28px;
-        border-radius: 28px;
+        border-radius: 28px;*/
+
+        opacity: 0.7;
     }
     &:active {
         opacity: .5;

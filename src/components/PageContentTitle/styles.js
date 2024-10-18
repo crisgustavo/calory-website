@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DefaultPageContentTitle = styled.h1 `
     font-size: 40px;
-    color: #4c2cff;
+    color: rgba(39,70,166,1);
     text-align: center;
 
     @media(max-width: 800px) {

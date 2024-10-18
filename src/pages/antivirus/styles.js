@@ -14,7 +14,7 @@ export const CatalogTitle = styled.h1 `
     text-align: center;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(182,181,181,1) 50%, rgba(255,255,255,0) 100%);
-    color: #4c2cff;
+    color: rgba(39,70,166,1);
 
     @media(max-width: 800px) {
         font-size: 140%;
@@ -71,7 +71,7 @@ export const CatalogItem = styled.div `
         opacity: .7;
         cursor: pointer;
         h1 {
-            color: #4c2cff;
+            color: rgba(39,70,166,1);
         }
         .plus{
             visibility: visible;
