@@ -50,7 +50,8 @@ export const BudgetButton = styled.button `
     border: 1px #ffffff;
     border-radius: 5cap;
     padding: 5px;
-    background: linear-gradient(180deg, #ffffff7c 0%, #9c9c9c 100%);
+    //background: linear-gradient(180deg, #ffffff7c 0%, #9c9c9c 100%);
+    background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
     color: #FFFFFF;
     text-align: center;
     min-width: max-content;
@@ -58,11 +59,12 @@ export const BudgetButton = styled.button `
 
     &:hover{
         //background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
-        background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
+        //background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
         cursor: pointer;
         transition: 0.5s;
         transition-property: font-size;
         font-size: 115%;
+        opacity: 0.7;
     }
 
     @media(max-width: 800px) {

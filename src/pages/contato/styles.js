@@ -92,11 +92,11 @@ export const Button = styled.button `
     &:hover{
         //background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
         
-        /*cursor: pointer;
+        cursor: pointer;
         transition: 0.5s;
         transition-property: font-size;
         font-size: 28px;
-        border-radius: 28px;*/
+        border-radius: 28px;
 
         opacity: 0.7;
     }
