@@ -11,7 +11,7 @@ export const Container = styled.div `
 `
 
 export const ContainerH1 = styled.h1 `
-    color: #4c2cff;
+    color: rgba(39,70,166,1);
     margin: 0px 20px 10px 60px;
 
     @media (max-width: 800px){
