@@ -7,5 +7,4 @@ export const DefaultTopBar = styled.div`
     justify-content: space-between;
     padding: 5px;
     width: 100%;
-    visibility: hidden;
 `

@@ -8,4 +8,8 @@ margin-left: 10px;
         &:hover {
             filter: grayscale(0);
         }
+
+        @media(max-width: 800px) {
+        width: 15px;
+    }
 `

@@ -9,4 +9,8 @@ export const DefaultInstagramLinkImg = styled.img `
             filter: grayscale(0);
         }
 
+    @media(max-width: 800px) {
+    width: 15px;
+    margin-left: 7px;
+}
 `
