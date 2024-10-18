@@ -11,7 +11,7 @@ import Footer from '../../components/Footer'
 
 import { ImgSlider, Content, BudgetInfo,
     BudgetText, BudgetButton, BudgetTitle,
-    DefaultWhatsapp,
+    DefaultWhatsapp, BudgetTitleSpan,
     ButtonWhatsapp
 } from "./styles"
 
@@ -65,7 +65,8 @@ function Home() {
 
             <Content>
                 <BudgetInfo>
-                    <BudgetTitle>Ligue agora para <span>(44) 99927-0531</span> ou pelo e-mail <span>atendimento@calory.com.br</span></BudgetTitle>
+                    <BudgetTitle>Ligue agora ou chame no whatsapp
+                    <BudgetTitleSpan>(44) 99993-9313</BudgetTitleSpan></BudgetTitle>
                     <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
                     <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
                     <ButtonWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />

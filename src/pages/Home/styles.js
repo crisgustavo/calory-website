@@ -27,12 +27,12 @@ export const BudgetInfo = styled.div `
 export const BudgetTitle = styled.h3 `
     grid-area: h3;
     text-align: center;
+`
 
-    span {
-        color: #4c2cff;
-        font-weight: 900;
-    }
-
+export const BudgetTitleSpan = styled.h3 `
+    text-align: center;
+    color: rgba(39,70,166,1);
+    font-weight: 900;
 `
 
 export const BudgetText = styled.p `
@@ -57,7 +57,8 @@ export const BudgetButton = styled.button `
     font-size: 100%;
 
     &:hover{
-        background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
+        //background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
+        background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
         cursor: pointer;
         transition: 0.5s;
         transition-property: font-size;
