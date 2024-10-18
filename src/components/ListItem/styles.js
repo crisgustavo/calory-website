@@ -12,16 +12,12 @@ export const DefaultListItem = styled.li `
     text-align: center;
     min-width: max-content;
 
-    &:hover{
-
-
-        /*
-        background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
+    &:hover{        
+        //background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
         cursor: pointer;
         transition: 0.5s;
         transition-property: font-size;
         font-size: 115%;
-        */
         opacity: 0.7;
     }
     &:active {
