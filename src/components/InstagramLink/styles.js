@@ -12,5 +12,6 @@ export const DefaultInstagramLinkImg = styled.img `
     @media(max-width: 800px) {
     width: 15px;
     margin-left: 7px;
+    filter: grayscale(0);
 }
 `

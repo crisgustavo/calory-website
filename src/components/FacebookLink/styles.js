@@ -11,5 +11,6 @@ margin-left: 10px;
 
         @media(max-width: 800px) {
         width: 15px;
+        filter: grayscale(0);
     }
 `
