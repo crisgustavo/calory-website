@@ -41,6 +41,7 @@ function SoftwareImobiliaria() {
                             <CheckImg /><PageP>CADASTRO DE INQUILINOS</PageP>
                             <CheckImg /><PageP>CADASTRO DE FIADOR</PageP>
                             <CheckImg /><PageP>GERADOR DE CONTRATOS</PageP>
+                            <CheckImg /><PageP>EMISSÃO DE BOLETOS E CARNÊS</PageP>
                             <CheckImg /><PageP>CONTROLE DE RECEBIMENTOS</PageP>
                             <CheckImg /><PageP>CONTROLE DE REPASSE</PageP>
                             <CheckImg /><PageP>TAXAS ADMINISTRATIVAS</PageP>

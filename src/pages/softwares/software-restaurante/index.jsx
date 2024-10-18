@@ -37,8 +37,8 @@ function SoftwareRestaurante() {
                         <PageH2>Sistema Empresarial completo para segmento de RESTAURANTES e LANCHONETES.</PageH2>
                         <PageH3>Este módulo é indicado para os segmentos: Restaurantes, Bares, Lanchonetes, Bistrôs, Pubs e Padarias.</PageH3>
                         <PageContentDescriptionInfo>
-                            <CheckImg /><PageP>APP NO CELULAR INTEGRADO COM O SISTEMA PARA GARÇOM TIRAR PEDIDO</PageP>
-                            <CheckImg /><PageP>APP NO CELULAR INTEGRADO CM ASS IMPRESSORAS</PageP>
+                            <CheckImg /><PageP>APP NO CELULAR INTEGRADO COM O SISTEMA PARA O GARÇOM TIRAR PEDIDO</PageP>
+                            <CheckImg /><PageP>APP NO CELULAR INTEGRADO COM AS IMPRESSORAS</PageP>
                             <CheckImg /><PageP>SISTEMA INTEGRADO COM A BALANÇA</PageP>
                             <CheckImg /><PageP>TELA DE MULTI-ATENDIMENTO</PageP>
                             <CheckImg /><PageP>EMISSÃO DE NFe E NFCe</PageP>

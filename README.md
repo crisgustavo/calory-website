@@ -1,8 +1,8 @@
-# React + Vite
+# Calory Sistemas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website desenvolvido em React + Vite para empresa de desenvolvimento e vendas de softwares.
+API Rest conectado para contato com banco de dados MYSQL
 
-Currently, two official plugins are available:
+- [Calory Sistemas](https://www.calory.com.br)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Colaborador: Cristiano Gustavo
