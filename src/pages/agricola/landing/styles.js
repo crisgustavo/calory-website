@@ -166,7 +166,8 @@ export const IncomingPanel = styled.div `
     background-color: rgb(222,222,222);
     box-shadow: 2px 2px 10px black;
     justify-content: center;
-    visibility: hidden;
+    width: 98%;
+    //visibility: hidden;
 `
 
 export const HeaderIncoming = styled.div `

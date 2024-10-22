@@ -6,6 +6,7 @@ function FooterLinks() {
         <DefaultFooterLinks>
             <PageLink>Home</PageLink>
             <PageLink>Sobre Nós</PageLink>
+            <PageLink>Políticas de Privacidades</PageLink>
             <PageLink>Softwares</PageLink>
             <PageLink>Contato</PageLink>
         </DefaultFooterLinks>

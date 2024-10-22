@@ -11,6 +11,7 @@ function PageLink({children}) {
             if (address === 'Softwares') {navigate('/softwares')}
             if (address === 'Sobre Nós') {navigate('/sobre-nos')}
             if (address === 'Contato') {navigate('/contato')}
+            if (address === 'Políticas de Privacidades') {navigate('/politicas-de-privacidade/politicas-de-privacidade')}
         }
 
     return (

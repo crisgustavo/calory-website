@@ -1,17 +1,23 @@
-import GetPlantio from "./getPlantio"
-import GetProducao from "./getProducao"
-import GetProdutos from "./getProdutos"
+import api from "../services/api";
+import { useState, useEffect } from "react";
 
 
-function GetEntradas() {
-    let plantioList = []
-    plantioList = GetPlantio(plantioList)
+function GetEntradas(entradasList) {
 
-    let productList = []
-    productList = GetProdutos(productList)
+    let [ entradas, setEntradas ] = useState ([])
 
-    let producaoList = []
-    producaoList = GetProducao(producaoList)
+    useEffect(() => {
+        async function getEntradas() {
+            const { data } = await api.get('/entradas')
 
-    
+            setEntradas(data)
+        }
+
+        getEntradas()
+    }, [])
+
+        entradasList = entradas
+    return entradasList
 }
+
+export default GetEntradas

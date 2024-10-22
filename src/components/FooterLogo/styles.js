@@ -13,7 +13,8 @@ export const DefaultFooterLogo = styled.img `
     }
 
     @media(max-width: 800px) {
-        width: 60%;
+        width: 100px;
         padding: 30px 15px;
+        margin-right: -20px;
     }
 `

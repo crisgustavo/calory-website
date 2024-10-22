@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import TopBar from '../../components/TopBar'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-//import Whatsapp from '../../components/Whatsapp'
 
 
 

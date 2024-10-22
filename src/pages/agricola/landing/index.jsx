@@ -24,6 +24,13 @@ import { useEffect, useState } from 'react'
 import api from '../../../services/api'
 import GetEmpresa from '../../../scripts/getEmpresa'
 import GetProdutos from '../../../scripts/getProdutos'
+import GetFazendas from '../../../scripts/getFazendas'
+import GetLocais from '../../../scripts/getLocais'
+import GetPlantio from '../../../scripts/getPlantio'
+import GetEntradas from '../../../scripts/getEntradas'
+import GetSaidas from '../../../scripts/getSaida'
+import GetEstoques from '../../../scripts/getEstoque'
+
 
 
 function AgricolaLanding() {
@@ -31,7 +38,6 @@ function AgricolaLanding() {
     const cliforimported = idclifor
     const nomeimported = nome
 
-    let cliforid = ''
     let fantasia = ''
     let id = ''
     let companyname = '' 
@@ -83,6 +89,29 @@ function AgricolaLanding() {
     productList = GetProdutos(productList)
     console.log(productList)
 
+    let locaisList = []
+    locaisList = GetLocais(locaisList)
+
+    let fazendasList = []
+    fazendasList = GetFazendas(fazendasList)
+
+    let plantioList = []
+    plantioList = GetPlantio(plantioList)
+
+    let entradasCliente = '';
+    function GetEntradaCliente(entradasCliente) {
+        let entradasList = []
+        entradasList = GetEntradas(entradasList)
+
+        entradasCliente = entradasList.map (item => {
+            if (item.idclifor == cliforimported && item.idempresa == id) {
+                return true
+            } else {
+                return false
+            }
+        })
+    }
+
 
     return (
         <>
@@ -99,7 +128,7 @@ function AgricolaLanding() {
 
             <Body>
                 <Panel>
-                    <Incoming>Entradas</Incoming>
+                    <Incoming onClick={() => GetEntradaCliente}>Entradas</Incoming>
                     <Output>Saídas</Output>
                     <Stock>Estoque</Stock>
                     <Print><img src={printer} alt="" /></Print>
