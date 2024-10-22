@@ -9,8 +9,11 @@ export const DefaultFooterLinks = styled.ul `
 
     @media(max-width: 800px) {
         font-size: 11px;
-        gap: 8px;
+        gap: 10px;
         width: max-content;
         margin-right: 15px;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-items: right;
     }
 `
