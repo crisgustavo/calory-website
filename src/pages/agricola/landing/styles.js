@@ -158,6 +158,7 @@ export const Print = styled.button `
 
 export const IncomingPanel = styled.div `
     display: flex;
+    flex-direction: column;
     border: 1px solid black;
     border-radius: 5px;
     width: 100%;
@@ -165,15 +166,22 @@ export const IncomingPanel = styled.div `
     margin: 10px 0px;
     background-color: rgb(222,222,222);
     box-shadow: 2px 2px 10px black;
-    justify-content: center;
     width: 98%;
     //visibility: hidden;
+    overflow: hidden;
 `
 
 export const HeaderIncoming = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
+`
+
+export const IncomingTable = styled.div `
+    width: 95%;
+    padding: 20px 10px;
+    overflow: auto;
+    align-self: center;
 `
 
 export const PageH1 = styled.h1 `
@@ -188,42 +196,57 @@ export const IncomingFilter = styled.div `
     width: 100%;
     gap: 50px;
     margin-top: 20px;
+    justify-content: center;
 `
 
 export const FilterH1 = styled.h1 `
     font-size: 25px;
+    align-self: center;
 `
 
 export const ProductSelect = styled.select `
-
+    width: max-content;
+    height: 25px;
+    align-self: center;
 `
 
 export const YearSelect = styled.select `
-
+    width: max-content;
+    height: 25px;
+    align-self: center;
 `
 
 export const MeasureSelect = styled.select `
-
+    width: max-content;
+    height: 25px;
+    align-self: center;
 `
 
 export const Period = styled.button `
-
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 25px;
 `
 
 export const PeriodPanel = styled.div `
-
+    display: flex;
+    gap: 10px;
 `
 
 export const StartPeriod = styled.input `
-
+    height: 25px;
+    align-self: center;
 `
 
 export const FinalPeriod = styled.input `
-
+    height: 25px;
+    align-self: center;
 `
 
 export const Clear = styled.button `
-
+    border: none;
 `
 
 export const OutputPanel = styled.div `
