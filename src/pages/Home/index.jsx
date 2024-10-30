@@ -71,7 +71,6 @@ function Home() {
             
             <Banner>
                 <BannerImg />
-                <BannerH1>Calory Sistemas</BannerH1>
                 <BannerH2>Solucionando de maneira segura e eficaz <br /> o gerenciamento de sua empresa</BannerH2>
                 <BannerP>Trazemos de maneira inteligente, softwares <br/>que ajudam a gerir e automatizar seu estabelecimento <br/> de forma precisa e descomplicada.</BannerP>
             </Banner>

@@ -69,7 +69,7 @@ export const MenuNavigator = styled.nav `
 `
 
 export const LogoNewTopBar = styled.img `
-    width: 200px;
+    width: 15%;
     height: fit-content;
     margin-right: 20px;
     align-self: center;
@@ -85,12 +85,12 @@ export const LogoNewTopBar = styled.img `
     }
 
 
-    @media(max-width: 995px) {
-        width: 150px;
+    @media(max-width: 800px) {
+        width: 20%;
     }
 
-    @media(max-width: 500px) {
-        width: 90px;
+    @media(max-width: 600px) {
+        width: 25%;
         margin-right: 10px;
     } 
 `

@@ -255,6 +255,7 @@ export const Banner = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     margin: 20px 0px;
     position: relative;
     height: 500px;
