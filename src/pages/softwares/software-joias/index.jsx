@@ -15,6 +15,7 @@ import { PageContentImage } from './styles';
 import joiasimg from '../../../assets/midias/produto/b-joias.jpg'
 import PageContentLeft from '../../../components/PageContentLeft';
 import WhatsappBudget from '../../../components/WhatsappBudget';
+import NewTopBar from '../../../components/NewTopBar';
 
 
 function SoftwareJoalheria() {
@@ -22,8 +23,7 @@ function SoftwareJoalheria() {
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
 
             <PageContent>
                 <PageContentTitle>Empresarial Joias</PageContentTitle>

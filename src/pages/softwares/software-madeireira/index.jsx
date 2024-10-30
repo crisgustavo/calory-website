@@ -15,14 +15,14 @@ import { PageContentImage } from './styles';
 import madeireiraimg from '../../../assets/midias/produto/b-madeira.jpg'
 import WhatsappBudget from '../../../components/WhatsappBudget';
 import PageContentLeft from '../../../components/PageContentLeft';
+import NewTopBar from '../../../components/NewTopBar';
 
 function SoftwareMadeireira() {
     window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
             
             <PageContent>
                 <PageContentTitle>Empresarial Madeireira</PageContentTitle>

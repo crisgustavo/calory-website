@@ -7,6 +7,7 @@ import Whatsapp from "../../components/Whatsapp";
 import { Content, Product, Plus,
          ProductH1, ProductP
 } from './styles'
+import NewTopBar from "../../components/NewTopBar";
 
 function PoliticaDePrivacidade() {
     window.scrollTo({top: 0, behavior: 'smooth'})
@@ -14,9 +15,8 @@ function PoliticaDePrivacidade() {
     const navigate = useNavigate();
     return (
         <>
-            <TopBar/>
+            <NewTopBar/>
 
-            <Header />
 
                 <Content>
                     <Product>

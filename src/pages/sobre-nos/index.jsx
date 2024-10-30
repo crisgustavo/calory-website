@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import NewTopBar from "../../components/NewTopBar";
 import TopBar from "../../components/TopBar";
 import Whatsapp from "../../components/Whatsapp";
 import { Container, ContainerH1, ContainerH2, ContainerP, LineRow } from "./styles";
@@ -11,8 +12,7 @@ function SobreNos() {
     window.scrollTo({top: 0, behavior: 'smooth'})
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
                 <Container>
                     <ContainerH1>Sobre Nós</ContainerH1>
 

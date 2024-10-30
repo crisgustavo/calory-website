@@ -1,5 +1,6 @@
 import Footer from "../../../components/Footer"
 import Header from "../../../components/Header"
+import NewTopBar from "../../../components/NewTopBar"
 import TopBar from "../../../components/TopBar"
 import Whatsapp from "../../../components/Whatsapp"
 import { Content, ContentH1, ContentH2, ContentP, LineRow } from "./styles"
@@ -12,9 +13,7 @@ function PoliticaCaloryControle() {
 
     return (
         <>
-            <TopBar />
-
-            <Header />
+            <NewTopBar />
 
             <Content>
                 <ContentH1>Política de Privacidade Calory Controle</ContentH1>

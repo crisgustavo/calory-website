@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import NewTopBar from "../../components/NewTopBar";
 import TopBar from "../../components/TopBar";
 import Whatsapp from "../../components/Whatsapp";
 import { Container, ContainerH1, ContainerInfo, 
@@ -18,9 +19,7 @@ function Contato(){
     return (
         <>
         
-
-            <TopBar />
-            <Header />
+            <NewTopBar />
                 <Container>
                     <FormEmail target="_blank" action="https://formsubmit.co/atendimento@calory.com.br" method="POST">
                         <ContainerInfo>

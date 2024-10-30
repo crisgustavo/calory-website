@@ -24,13 +24,13 @@ import c8ecpf from '../../assets/midias/produto/C22-e-cpf-a3-de-3-anos-em-cartao
 import c9ecpf from '../../assets/midias/produto/C24-e-cpf-a3-de-3-anos-em-token-2e452bbdcb.jpg'
 import { CatalogItem, CatalogShow, CatalogTitle, Main } from "./styles"
 import Whatsapp from "../../components/Whatsapp"
+import NewTopBar from "../../components/NewTopBar"
 
 function CertificadosDigitais() {
     window.scrollTo({top: 0, behavior: 'smooth'})
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
             <Main>
                 <CatalogTitle>Certificados e-CNPJ</CatalogTitle>
                 <CatalogShow>

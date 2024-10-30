@@ -15,6 +15,7 @@ import { PageContentImage } from './styles';
 import imobiliariaimg from '../../../assets/midias/produto/b-imobiliaria.jpg'
 import PageContentLeft from '../../../components/PageContentLeft';
 import WhatsappBudget from '../../../components/WhatsappBudget';
+import NewTopBar from '../../../components/NewTopBar';
 
 
 function SoftwareImobiliaria() {
@@ -22,8 +23,7 @@ function SoftwareImobiliaria() {
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
 
             <PageContent>
                 <PageContentTitle>Empresarial Imobiliaria</PageContentTitle>

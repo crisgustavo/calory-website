@@ -15,14 +15,14 @@ import { PageContentImage } from './styles';
 import autocenterimg from '../../../assets/midias/produto/b-autocenter.jpg'
 import PageContentLeft from '../../../components/PageContentLeft';
 import WhatsappBudget from '../../../components/WhatsappBudget';
+import NewTopBar from '../../../components/NewTopBar';
 
 function SoftwareAutocenter() {
     window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
 
             <PageContent>
                 <PageContentTitle>Empresarial Autocenter</PageContentTitle>

@@ -15,14 +15,14 @@ import { PageContentImage } from './styles';
 import mercadoimg from '../../../assets/midias/produto/b-mercados.jpg'
 import WhatsappBudget from '../../../components/WhatsappBudget';
 import PageContentLeft from '../../../components/PageContentLeft';
+import NewTopBar from '../../../components/NewTopBar';
 
 function SoftwareMercado() {
     window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
             
             <PageContent>
                 <PageContentTitle>Empresarial Mercados e Conveniências</PageContentTitle>

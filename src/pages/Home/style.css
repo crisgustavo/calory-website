@@ -1,5 +1,41 @@
-.swiper-slide-prev, .swiper-slide-next {
+.swiper-slide-prev,
+.swiper-slide-next {
     opacity: 0;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s linear;
+    display: initial;
+}
+
+
+@media (max-width: 800px) {
+    .menu-bar.active {
+            height: 150px;
+            transition: 0.5s linear;
+            overflow: hidden;
+        }
+}
+
+@media (max-width: 450px) {
+    .menu-bar.active {
+        height: 190px;
+        transition: 0.5s linear;
+        overflow: hidden;
+    }
+}
+
+
+.menu-bar {
+    height: 100px;
+    transition: 0.5s linear;
+}
+
+.menu {
+    opacity: 0;
+    display: none;
 }
 
 /*.item {

@@ -1,5 +1,6 @@
 import Footer from "../../../components/Footer"
 import Header from "../../../components/Header"
+import { LogoNewTopBar } from "../../../components/NewTopBar/styles"
 import TopBar from "../../../components/TopBar"
 import Whatsapp from "../../../components/Whatsapp"
 import { Content, ContentH1, ContentH2, ContentP, LineRow } from "./styles"
@@ -11,9 +12,7 @@ function PoliticaAppCadCliente() {
 
     return (
         <>
-            <TopBar />
-
-            <Header />
+            <LogoNewTopBar />
 
             <Content>
                 <ContentH1>Politica de Privacidade AppCadCliente</ContentH1>

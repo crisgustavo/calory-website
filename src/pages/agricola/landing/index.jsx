@@ -6,13 +6,13 @@ import {
     Background, Footer, Header,
     UserSettings, UserLogo, UserName,
     CompanyLogo, CompanyName, Exit,
-    Body, Panel, Incoming,Output, 
-    Stock, Print,IncomingPanel, 
+    Body, Panel, Incoming, Output,
+    Stock, Print, IncomingPanel,
     IncomingTable, OutputPanel,
-    StockPanel, HeaderIncoming, PageH1, 
+    StockPanel, HeaderIncoming, PageH1,
     IncomingFilter, FilterH1,
-    ProductSelect, YearSelect, 
-    MeasureSelect, Period, PeriodPanel, 
+    ProductSelect, YearSelect,
+    MeasureSelect, Period, PeriodPanel,
     StartPeriod, FinalPeriod, Clear
 } from './styles'
 import FooterElements from '../../../components/FooterElements'
@@ -77,14 +77,25 @@ function AgricolaLanding() {
     getSelectSafra = GetSelectAnoSafra(entradascliente, getSelectSafra)
     //Criando array com os anos safra de entrada do mesmo cliente OKOKOKOKOK
 
-    let entradasclientenew = []
-    let i = 0
-    entradascliente.map(entrada => {
-        if (entrada.idproduto === '') {    
-            entradasclientenew[i] = entrada
-            i++
-        }
-    })
+    let entradasclientenew = entradascliente
+    function setEntradas(selOptProduto, entradasclientenew) {
+        
+        
+        let i = 0
+        entradascliente.map(entrada => {
+            if (selOptProduto === 0 || selOptProduto == '' || selOptProduto == null || selOptProduto == undefined) {
+                entradasclientenew = entradascliente
+            } else {
+                if (entrada.idproduto === selOptProduto) {
+                    entradasclientenew[i] = entrada
+                    i++
+                }
+            }
+        })
+        console.log(entradasclientenew)
+        return  entradasclientenew
+
+    } //mapeamento de entrada por produto
 
     //console.log(entradasclientenew)
 
@@ -92,8 +103,8 @@ function AgricolaLanding() {
     //validação de oculto e visível de elementos
     const [isShowDataIncoming, setIsShowDataIncoming] = useState(false);
     const handleDataIncoming = () => setIsShowDataIncoming(!isShowDataIncoming)
-    
-    const[isShowEntradas, setIsShowEntradas] = useState(false);
+
+    const [isShowEntradas, setIsShowEntradas] = useState(false);
     const handleEntradas = () => setIsShowEntradas(!isShowEntradas)
 
 
@@ -104,7 +115,7 @@ function AgricolaLanding() {
     const handleProdutoChange = (event) => {
         const value = event.target.value;
         setSelOptProduto(value);
-        console.log(selOptProduto)
+        return selOptProduto;
     }
 
 
@@ -129,78 +140,78 @@ function AgricolaLanding() {
                     <Print><img src={printer} alt="" /></Print>
                 </Panel>
                 {isShowEntradas &&
-                <IncomingPanel>
-                    <HeaderIncoming>
-                        <PageH1>Entradas</PageH1>
-                        <IncomingFilter>
-                            <FilterH1>Produtos</FilterH1>
-                            <ProductSelect onChange={handleProdutoChange} value={selOptProduto}>
-                                <option value='0'>TODOS</option>
-                                {   
-                                    getSelectProdutos.map((item) =>
-                                        <option value={item.idproduto}>{item.nome}</option>
-                                    )
-                                }
-                            </ProductSelect>
-                            <FilterH1>Safra</FilterH1>
-                            <YearSelect>
-                                <option value='0'>TODOS</option>
-                                {
-                                    getSelectSafra.map((item) =>
-                                        <option value={item.ano_safra}>{item.ano_safra}</option>
-                                    )
-                                }
-                            </YearSelect>
-                            <MeasureSelect>
-                                <option value='kg' selected>KG</option>
-                                <option value='sc'>Sc</option>
-                            </MeasureSelect>
-                            <Period type='button' onClick={handleDataIncoming}>Datas</Period>
+                    <IncomingPanel>
+                        <HeaderIncoming>
+                            <PageH1>Entradas</PageH1>
+                            <IncomingFilter>
+                                <FilterH1>Produtos</FilterH1>
+                                <ProductSelect value={selOptProduto} onChange={setEntradas(selOptProduto, entradasclientenew)}>
+                                    <option value='0'>TODOS</option>
+                                    {
+                                        getSelectProdutos.map((item) =>
+                                            <option value={item.idproduto}>{item.nome}</option>
+                                        )
+                                    }
+                                </ProductSelect>
+                                <FilterH1>Safra</FilterH1>
+                                <YearSelect>
+                                    <option value='0'>TODOS</option>
+                                    {
+                                        getSelectSafra.map((item) =>
+                                            <option value={item.ano_safra}>{item.ano_safra}</option>
+                                        )
+                                    }
+                                </YearSelect>
+                                <MeasureSelect>
+                                    <option value='kg' selected>KG</option>
+                                    <option value='sc'>Sc</option>
+                                </MeasureSelect>
+                                <Period type='button' onClick={handleDataIncoming}>Datas</Period>
                                 {isShowDataIncoming && <PeriodPanel>
-                                                <FilterH1>De:</FilterH1>
-                                                <StartPeriod />
-                                                <FilterH1>Até:</FilterH1>
-                                                <FinalPeriod />
-                                                <Clear />
-                                            </PeriodPanel>}   
-                        </IncomingFilter>
-                    </HeaderIncoming>
-                    <IncomingTable>
-                        <Table className='table'>
-                            <thead>
-                                <tr className='tr'>
-                                    <th className='align-left'>Romaneio</th>
-                                    <th>Ano Safra</th>
-                                    <th>Produto</th>
-                                    <th className='align-right'>Peso Bruto</th>
-                                    <th className='align-right'>Peso Líquido</th>
-                                    <th>Placa</th>
-                                    <th>Data</th>
-                                    <th className='align-right'>Desc. Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <div className='body'>
-                                {
+                                    <FilterH1>De:</FilterH1>
+                                    <StartPeriod />
+                                    <FilterH1>Até:</FilterH1>
+                                    <FinalPeriod />
+                                    <Clear />
+                                </PeriodPanel>}
+                            </IncomingFilter>
+                        </HeaderIncoming>
+                        <IncomingTable>
+                            <Table className='table'>
+                                <thead>
+                                    <tr className='tr'>
+                                        <th className='align-left'>Romaneio</th>
+                                        <th>Ano Safra</th>
+                                        <th>Produto</th>
+                                        <th className='align-right'>Peso Bruto</th>
+                                        <th className='align-right'>Peso Líquido</th>
+                                        <th>Placa</th>
+                                        <th>Data</th>
+                                        <th className='align-right'>Desc. Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <div className='body'>
+                                        {
 
-                                    entradascliente.map((item) =>
-                                        <tr className='tr result'>
-                                            <td className='align-left'>{item.romaneio}</td>
-                                            <td className='align-center'>{item.ano_safra}</td>
-                                            <td className='align-center'>{item.produto}</td>
-                                            <td className='align-right'>{item.peso_liquido_entrada}</td>
-                                            <td className='align-right'>{item.peso_liquido}</td>
-                                            <td className='align-center'>{item.placa}</td>
-                                            <td className='align-center'>{item.data}</td>
-                                            <td className='align-right'>{item.desconto_total}</td>
-                                        </tr>
-                                    )
-                                }
-                                </div>
-                            </tbody>
-                        </Table>
-                    </IncomingTable>
-                </IncomingPanel>
+                                            entradasclientenew.map((item) =>
+                                                <tr className='tr result'>
+                                                    <td className='align-left'>{item.romaneio}</td>
+                                                    <td className='align-center'>{item.ano_safra}</td>
+                                                    <td className='align-center'>{item.produto}</td>
+                                                    <td className='align-right'>{item.peso_liquido_entrada}</td>
+                                                    <td className='align-right'>{item.peso_liquido}</td>
+                                                    <td className='align-center'>{item.placa}</td>
+                                                    <td className='align-center'>{item.data}</td>
+                                                    <td className='align-right'>{item.desconto_total}</td>
+                                                </tr>
+                                            )
+                                        }
+                                    </div>
+                                </tbody>
+                            </Table>
+                        </IncomingTable>
+                    </IncomingPanel>
                 }
                 <OutputPanel>
 

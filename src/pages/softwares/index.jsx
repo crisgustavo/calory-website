@@ -16,6 +16,7 @@ import plus from '../../assets/images/icons/pls.png'
 import { CatalogItem, CatalogShow, CatalogTitle, Main } from './styles';
 import Footer from '../../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import NewTopBar from '../../components/NewTopBar';
 
 
 function Softwares() {
@@ -24,8 +25,7 @@ function Softwares() {
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
             
             <Main>
                 <CatalogTitle>Conheça nossos Softwares!</CatalogTitle>

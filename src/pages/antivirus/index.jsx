@@ -9,13 +9,13 @@ import kaspersmall from '../../assets/images/antivirus/kaspersmalloffice.png'
 import kasperstandard from '../../assets/images/antivirus/kasperstandard.png'
 import kaspermobile from '../../assets/images/antivirus/kasperstandardmobile.png'
 import Whatsapp from "../../components/Whatsapp"
+import NewTopBar from "../../components/NewTopBar"
 
 function Antivirus() {
     window.scrollTo({top: 0, behavior: 'smooth'})
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
             <Main>
                 <CatalogTitle>Conheça nossos Antivírus!</CatalogTitle>
                 <CatalogShow>

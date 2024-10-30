@@ -1,5 +1,6 @@
 import Footer from "../../../components/Footer"
 import Header from "../../../components/Header"
+import NewTopBar from "../../../components/NewTopBar"
 import TopBar from "../../../components/TopBar"
 import Whatsapp from "../../../components/Whatsapp"
 import { Content, LineRow, ContentH1,
@@ -11,9 +12,8 @@ import { Content, LineRow, ContentH1,
 function PoliticaVisitas() {
     return (
         <>
-            <TopBar />
+            <NewTopBar />
 
-            <Header />
 
             <Content>
                 <ContentH1>Política de Privacidade Visitas</ContentH1>

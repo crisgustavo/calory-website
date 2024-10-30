@@ -15,6 +15,7 @@ import { PageContentImage } from './styles';
 import restauranteimg from '../../../assets/midias/produto/b-restaurantes.jpg'
 import WhatsappBudget from '../../../components/WhatsappBudget';
 import PageContentLeft from '../../../components/PageContentLeft';
+import NewTopBar from '../../../components/NewTopBar';
 
 function SoftwareRestaurante() {
     window.scrollTo({top: 0, behavior: 'smooth'})
@@ -22,8 +23,7 @@ function SoftwareRestaurante() {
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
             
             <PageContent>
                 <PageContentTitle>Empresarial Restaurantes e Lanchonetes</PageContentTitle>

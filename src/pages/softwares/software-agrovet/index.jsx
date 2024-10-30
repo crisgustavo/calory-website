@@ -15,14 +15,14 @@ import { PageContentImage } from './styles';
 import agrovetimg from '../../../assets/midias/produto/b-agrovet.jpg'
 import PageContentLeft from '../../../components/PageContentLeft';
 import WhatsappBudget from '../../../components/WhatsappBudget';
+import NewTopBar from '../../../components/NewTopBar';
 
 function SoftwareAgrovet() {
     window.scrollTo({top: 0, behavior: 'smooth'})
 
     return (
         <>
-            <TopBar />
-            <Header />
+            <NewTopBar />
 
             <PageContent>
                 <PageContentTitle>Empresarial Agro e Veterinárias</PageContentTitle>

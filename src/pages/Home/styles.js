@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import banner2 from '../../assets/images/banner2.jpg'
 
 
 
@@ -172,5 +173,166 @@ export const DefaultWhatsapp = styled.img `
 
     @media(max-width: 800px) {
         visibility: hidden;
+    }
+`
+
+
+export const NewTopBar = styled.div `
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+    position: relative;
+
+    @media(max-width: 800px) {
+        height: max-content;
+    }
+`
+
+export const MenuBar = styled.div `
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+`
+
+export const MenuButton = styled.button `
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px black;
+    padding: 2px;
+    width: max-content;
+    cursor: pointer;
+`
+
+export const NavigatorContent = styled.div `
+    @media(max-width: 800px) {
+        height: max-content;
+        overflow: visible;
+    }
+`
+
+export const MenuButtonImg = styled.img `
+    width: 50px;
+
+    @media(max-width: 995px) {
+        width: 30px;
+    }
+`
+
+export const MenuNavigator = styled.nav `
+    @media(max-width: 800px) {
+        height: max-content;
+    }
+`
+
+export const LogoNewTopBar = styled.img `
+    width: 200px;
+    height: fit-content;
+    margin-right: 20px;
+    align-self: center;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+
+    @media(max-width: 995px) {
+        width: 150px;
+    }
+`
+
+export const Banner = styled.div `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px;
+    position: relative;
+    height: 500px;
+
+    @media(max-width: 800px) {
+        height: 300px;
+    }
+    @media(max-width: 400px) {
+        height: 200px;
+        margin: 10px 0px;
+    }
+`
+
+export const BannerImg = styled.div `
+    display: flex;
+    align-self: center;
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    z-index: -1;
+    background: url(${banner2});
+    background-size: 100%;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    opacity: 0.5;
+
+    @media(max-width: 450px) {
+        background-size: 200%;
+    }
+`
+
+export const BannerH1 = styled.h1 `
+    background-image: linear-gradient(180deg, rgba(1,39,159,1) 31%, rgba(61,123,175,1) 55%, rgba(1,39,159,1) 81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-left: 5%;
+    font-size: 300%;
+
+    @media(max-width: 900px) {
+        font-size: 200%;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 120%;
+    }
+`
+
+export const BannerH2 = styled.h2 `
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 175%;
+    color: rgba(1,39,159,1);
+
+    @media(max-width: 900px){
+        font-size: 116%;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 70%;
+    }
+`
+
+export const BannerP = styled.p `
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 100%;
+    font-weight: 500;
+
+    @media(max-width: 900px) {
+        font-size: 66%;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 55%;
     }
 `
