@@ -22,9 +22,7 @@ export const MenuBar = styled.div `
     height: 60px;
     align-items: center;
 
-    @media(max-width: 450px) {
-        flex-direction: column;
-        justify-content: center;
+    @media(max-width: 500px) {
         align-items: center;
         padding: 0px 10px;
         height: 40px;
@@ -56,7 +54,7 @@ export const MenuButtonImg = styled.img `
         width: 30px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 500px) {
         width: 20px;
     }
 `
@@ -91,7 +89,7 @@ export const LogoNewTopBar = styled.img `
         width: 150px;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 500px) {
         width: 90px;
         margin-right: 10px;
     } 

@@ -27,7 +27,7 @@ export const DefaultListMenu = styled.ul `
         overflow: visible;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
         display: grid;
         grid-template-columns: max-content;
         font-size: 35%;

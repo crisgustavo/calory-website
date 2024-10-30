@@ -262,7 +262,7 @@ export const Banner = styled.div `
     @media(max-width: 800px) {
         height: 300px;
     }
-    @media(max-width: 400px) {
+    @media(max-width: 500px) {
         height: 200px;
         margin: 10px 0px;
     }

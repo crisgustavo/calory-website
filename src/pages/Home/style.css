@@ -19,9 +19,9 @@
         }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .menu-bar.active {
-        height: 190px;
+        height: 150px;
         transition: 0.5s linear;
         overflow: hidden;
     }

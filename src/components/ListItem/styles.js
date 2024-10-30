@@ -25,7 +25,7 @@ export const DefaultListItem = styled.li `
         font-size: 50%;
     }
 
-    @media(max-width: 450px){
+    @media(max-width: 500px){
         font-size: 35%;
         padding: 5px 5px;
     }
