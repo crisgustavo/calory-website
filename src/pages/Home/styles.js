@@ -394,6 +394,8 @@ export const Content1 = styled.div `
     @media(max-width: 800px) {
         border-radius: 25px;
         margin-left: 0%;
+        flex-direction: column;
+        margin-bottom: 2%;
     }
 `
 
@@ -409,6 +411,11 @@ export const ContentInfo1 = styled.div `
 
     color: #FFFFFF;
     text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+
+    @media(max-width: 800px) {
+        width: 100%;
+        margin: 5% 0 5%
+    }
 `
 
 export const ContentInfoHead = styled.div `
