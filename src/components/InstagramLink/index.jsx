@@ -3,7 +3,7 @@ import instaimage from '../../assets/images/social-media/instagram.png'
 
 function InstagramLink() {
     return (
-        <a href='https://www.instagram.com/calorysistemas/'><DefaultInstagramLinkImg src={instaimage} /></a>
+        <a href='https://www.instagram.com/calorysistemas/' target="blank"><DefaultInstagramLinkImg src={instaimage} /></a>
     )
 }
 

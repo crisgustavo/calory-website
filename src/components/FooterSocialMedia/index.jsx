@@ -5,8 +5,8 @@ import instagramicon from '../../assets/images/social-media/instagram.png'
 function FooterSocialMedia() {
     return (
         <DefaultFooterSocialMedia>
-            <a href='https://www.facebook.com/calorysistemas'><img src={facebookicon} alt="Facebook" /></a>
-            <a href='https://www.instagram.com/calorysistemas/'><img src={instagramicon} alt="Instagram" /></a>
+            <a href='https://www.facebook.com/calorysistemas' target="blank"><img src={facebookicon} alt="Facebook" /></a>
+            <a href='https://www.instagram.com/calorysistemas/' target="blank"><img src={instagramicon} alt="Instagram" /></a>
         </DefaultFooterSocialMedia>
     )
 }
