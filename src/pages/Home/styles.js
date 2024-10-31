@@ -1,7 +1,14 @@
 import styled from 'styled-components'
 import banner2 from '../../assets/images/banner2.jpg'
+import banner3 from '../../assets/images/banner3.png'
+import banner4 from '../../assets/images/banner4.png'
 
 
+
+export const BackgroundGradient = styled.div `
+    background: linear-gradient(45deg, rgba(235,245,255,1) 0%, rgba(217,235,255,1) 100%);
+    z-index: -100;
+`
 
 export const ImgSlider = styled.img `
     width: 80%;
@@ -22,7 +29,7 @@ export const BudgetInfo = styled.div `
     padding: 1% 10%;
     gap: 5px;
     justify-content: center;
-    
+    box-shadow: 1px 2px 5px 1px black;
 `               
 
 export const BudgetTitle = styled.h3 `
@@ -176,7 +183,7 @@ export const DefaultWhatsapp = styled.img `
     }
 `
 
-
+/*
 export const NewTopBar = styled.div `
     display: flex;
     flex-direction: row;
@@ -250,32 +257,49 @@ export const LogoNewTopBar = styled.img `
         width: 150px;
     }
 `
-
+*/
 export const Banner = styled.div `
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin: 20px 0px;
-    position: relative;
     height: 500px;
+    z-index: 2;
+    gap: 40px;
+    margin: 0px 0px 10px;
+    background-color: navy;
 
     @media(max-width: 800px) {
         height: 300px;
     }
     @media(max-width: 500px) {
         height: 200px;
-        margin: 10px 0px;
+        margin: 0px 0px 8px;
     }
 `
 
+//SE A IMAGEM FOR = BANNER3 
 export const BannerImg = styled.div `
+    width: 30%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 1px 2px 5px 1px black;
+
+    @media(max-width: 800px) {
+        border-radius: 20px;
+    }
+`
+export const IMGBanner = styled.img `
+    
+`
+//SE FOR BANNER FUNDO
+/*export const BannerImg = styled.div `
     display: flex;
     align-self: center;
-    position: absolute;
     width: 99%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
     background: url(${banner2});
     background-size: 100%;
     background-position: center;
@@ -288,34 +312,47 @@ export const BannerImg = styled.div `
     @media(max-width: 450px) {
         background-size: 200%;
     }
+`*/
+
+export const BannerText = styled.div `
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+
+    @media(max-width: 800) {
+        width: 60%;
+    }
 `
 
 export const BannerH1 = styled.h1 `
-    background-image: linear-gradient(180deg, rgba(1,39,159,1) 31%, rgba(61,123,175,1) 55%, rgba(1,39,159,1) 81%);
+    background-image: linear-gradient(180deg, #FFFFFF 31%, rgba(61,123,175,1) 55%, #FFFFFF 81%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     margin-left: 5%;
-    font-size: 300%;
+    font-size: 250%;
 
     @media(max-width: 900px) {
-        font-size: 200%;
+        font-size: 180%;
     }
 
     @media(max-width: 600px) {
-        font-size: 120%;
+        font-size: 100%;
     }
 `
 
 export const BannerH2 = styled.h2 `
     margin-left: 5%;
-    margin-top: 1%;
+    
     font-size: 175%;
-    color: rgba(1,39,159,1);
+    color: rgb(0, 35, 66);
 
     @media(max-width: 900px){
-        font-size: 116%;
+        font-size: 100%;
     }
 
     @media(max-width: 600px) {
@@ -325,7 +362,8 @@ export const BannerH2 = styled.h2 `
 
 export const BannerP = styled.p `
     margin-left: 5%;
-    margin-top: 1%;
+    color: #aad4ff;
+
     font-size: 100%;
     font-weight: 500;
 
@@ -335,5 +373,19 @@ export const BannerP = styled.p `
 
     @media(max-width: 600px) {
         font-size: 55%;
+    }
+`
+export const Content1 = styled.div `
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 98%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    padding: 2% 0%;
+    justify-self: center;
+    box-shadow: 1px 2px 5px 1px black;
+
+    @media(max-width: 800px) {
+        border-radius: 25px;
     }
 `

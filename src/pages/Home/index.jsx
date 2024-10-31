@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import TopBar from '../../components/TopBar'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import NewTopBar from '../../components/NewTopBar'
 
 
 
@@ -13,17 +14,15 @@ import {
     BudgetText, BudgetButton, BudgetTitle,
     DefaultWhatsapp, BudgetTitleSpan,
     ButtonWhatsapp,
-    MenuBar,
-    LogoNewTopBar,
-    MenuButton,
-    MenuButtonImg,
-    MenuNavigator,
-    NavigatorContent,
     Banner,
     BannerImg,
     BannerH1,
     BannerP,
-    BannerH2
+    BannerH2,
+    BackgroundGradient,
+    BannerText,
+    IMGBanner,
+    Content1
 } from "./styles"
 
 import whatsappicon from '../../assets/images/icons/whatsapp.png'
@@ -35,14 +34,16 @@ import slider5 from '../../assets/midias/banner/Ban-empresarial.png'
 
 import banner1 from '../../assets/images/banner1.jpg'
 import banner2 from '../../assets/images/banner2.jpg'
+import banner3 from '../../assets/images/banner3.png'
+import banner4 from '../../assets/images/banner4.png'
 
 
 import menubuttonimg from '../../assets/images/menu.png'
 import topbarimg from '../../assets/images/logo.png'
 import ListMenu from '../../components/ListMenu'
-import NewTopBar from '../../components/NewTopBar'
 import { useRef, useState } from 'react'
 import { DefaultTopBar } from '../../components/TopBar/styles'
+import { Bold } from 'lucide'
 
 
 
@@ -65,48 +66,58 @@ function Home() {
 
     return (
         <>
-            <TopBar />
-            <NewTopBar />
-            
-            
-            <Banner>
-                <BannerImg />
-                <BannerH2>Solucionando de maneira segura e eficaz <br /> o gerenciamento de sua empresa</BannerH2>
-                <BannerP>Trazemos de maneira inteligente, softwares <br/>que ajudam a gerir e automatizar seu estabelecimento <br/> de forma precisa e descomplicada.</BannerP>
-            </Banner>
+            <BackgroundGradient>
+                <TopBar />
 
-            <Swiper
-                slidesPerView={1}
-                pagination={{ clickable: true }}
-                navigation
-                autoplay={{ delay: 5000 }}
-                loop='true'
-                effect='coverflow'
-                followFinger='true'
-                style={{ 'width': '99%' }}
-            >
-                {arrayImages.map((item) => (
-                    <SwiperSlide key={item.id}>
-                        <ImgSlider src={item.image} alt='Slider' className='slide-item' onClick={() => navigate(item.url)} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            
-            <Content>
-                <BudgetInfo>
-                    <BudgetTitle>Ligue agora ou chame no whatsapp
-                        <BudgetTitleSpan>(44) 99993-9313</BudgetTitleSpan></BudgetTitle>
-                    <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
-                    <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
-                    <ButtonWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
-                </BudgetInfo>
-            </Content>
+                <NewTopBar />
+
+                <Banner>
+
+                    <BannerText>
+                        <BannerH1>Está procurando um software completo para gerenciar sua empresa?</BannerH1>
+                        
+                        <BannerP>Temos a melhor solução para organizar e aumentar o faturamento do seu negócio com todo treinamento e suporte de uma equipe de ponta!</BannerP>
+                    </BannerText>
+
+                    <BannerImg>
+                        <IMGBanner src={banner3} />
+                    </BannerImg>
+
+                </Banner>
 
 
+                <Content1>
+                    <Swiper
+                        slidesPerView={1}
+                        pagination={{ clickable: true }}
+                        navigation
+                        autoplay={{ delay: 5000 }}
+                        loop='true'
+                        effect='coverflow'
+                        followFinger='true'
+                        style={{ 'width': '99%' }}
+                    >
+                        {arrayImages.map((item) => (
+                            <SwiperSlide key={item.id}>
+                                <ImgSlider src={item.image} alt='Slider' className='slide-item' onClick={() => navigate(item.url)} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </Content1>
+
+                <Content>
+                    <BudgetInfo>
+                        <BudgetTitle>Ligue agora ou chame no whatsapp
+                            <BudgetTitleSpan>(44) 99993-9313</BudgetTitleSpan></BudgetTitle>
+                        <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
+                        <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
+                        <ButtonWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
+                    </BudgetInfo>
+                </Content>
+
+                <DefaultWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
+            </BackgroundGradient>
             <Footer />
-
-            <DefaultWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
-
         </>
     )
 }
