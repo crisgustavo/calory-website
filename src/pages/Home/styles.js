@@ -8,6 +8,10 @@ import banner4 from '../../assets/images/banner4.png'
 export const BackgroundGradient = styled.div `
     background: linear-gradient(45deg, rgba(235,245,255,1) 0%, rgba(217,235,255,1) 100%);
     z-index: -100;
+
+    @media(max-width: 800px) {
+        background: linear-gradient(45deg, rgba(235,245,255,1) 0%, #e8f3ff 100%);
+    }
 `
 
 export const ImgSlider = styled.img `
