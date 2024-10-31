@@ -12,7 +12,7 @@ export const DefaultListMenu = styled.ul `
 
     @media(max-width: 995px) {
         font-size: 80%;
-        gap: 5px;
+        gap: 0px;
         justify-content: center;
         align-items: flex-start;
     }
@@ -20,7 +20,7 @@ export const DefaultListMenu = styled.ul `
     @media(max-width: 800px) {
         display: grid;
         grid-template-columns: max-content;
-        font-size: 50%;
+        font-size: 135%;
         height: max-content;
         overflow: visible;
     }
@@ -28,7 +28,7 @@ export const DefaultListMenu = styled.ul `
     @media (max-width: 500px) {
         display: flex;
         flex-direction: column;
-        font-size: 35%;
+        font-size: 135%;
         height: max-content;
         overflow: visible;
         margin-left: -5%;
