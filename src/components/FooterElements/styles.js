@@ -8,7 +8,7 @@ export const DefaultFooterElements = styled.div `
     justify-content: space-between;
     grid-template-areas: 'logo links' '. socialmedia';
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         font-size: 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'logo links' '. socialmedia';
@@ -22,7 +22,7 @@ export const Copyright = styled.p `
     font-size: 13px;
     font-weight: 200;
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         font-size: 11px;
         margin-top: -5%;
         margin-left: 15px;

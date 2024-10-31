@@ -7,7 +7,7 @@ import ListMenu from '../ListMenu';
 
 
 function NewTopBar() {
-    
+
     const dropDownRef = useRef(null)
     const [isActive, setIsActive] = useState(false);
     const onClick = () => { setIsActive(!isActive) }
@@ -15,15 +15,15 @@ function NewTopBar() {
     return (
         <TopBar>
             <MenuBar className={`menu-bar ${isActive ? "active" : "inactive"}`}>
-                    <MenuButton onClick={() => onClick()} className='menu-button'>
-                        <MenuButtonImg src={menubuttonimg} onClick={() => navigate('/')}/>
-                    </MenuButton>
+                <MenuButton onClick={() => onClick()} className='menu-button'>
+                    <MenuButtonImg src={menubuttonimg} onClick={() => navigate('/')} />
+                </MenuButton>
 
-                        <MenuNavigator ref={dropDownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
-                            <ListMenu />
-                        </MenuNavigator>
-                </MenuBar>
-                <LogoNewTopBar src={topbarimg} />
+                <MenuNavigator ref={dropDownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
+                    <ListMenu />
+                </MenuNavigator>
+            </MenuBar>
+            <LogoNewTopBar src={topbarimg} />
         </TopBar>
     )
 }

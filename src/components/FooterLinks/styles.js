@@ -7,7 +7,7 @@ export const DefaultFooterLinks = styled.ul `
     margin-right: 30px;
     grid-area: links;
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         font-size: 11px;
         gap: 10px;
         width: max-content;

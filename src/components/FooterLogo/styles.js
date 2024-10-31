@@ -12,7 +12,7 @@ export const DefaultFooterLogo = styled.img `
         opacity: 0.5;
     }
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         width: 100px;
         padding: 30px 15px;
         margin-right: -20px;

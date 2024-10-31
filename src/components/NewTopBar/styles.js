@@ -4,21 +4,20 @@ export const TopBar = styled.div `
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     border-top: 0px transparent;
     border-bottom: 1px solid rgb(90, 90, 90);
     box-shadow: 0px 3px 4px 0px rgb(90, 90, 90);
     position: relative;
 
-    @media(max-width: 800px) {
+    @media(max-width: 900px) {
         height: max-content;
     }
 `
 
 export const MenuBar = styled.div `
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     height: 60px;
     align-items: center;
 
@@ -70,10 +69,8 @@ export const MenuNavigator = styled.nav `
 
 export const LogoNewTopBar = styled.img `
     width: 15%;
-    height: fit-content;
-    margin-right: 20px;
-    align-self: center;
-    grid-area: logo;
+    
+    margin-right: 1.5%;
 
     &:hover {
         cursor: pointer;
@@ -85,11 +82,11 @@ export const LogoNewTopBar = styled.img `
     }
 
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         width: 20%;
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 500px) {
         width: 25%;
         margin-right: 10px;
     } 

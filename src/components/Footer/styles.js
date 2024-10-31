@@ -6,7 +6,7 @@ export const ImgBackgroundFooter = styled.img `
     z-index: -1;
     width: 100%;
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         width: 100%;
         height: 25%;
     }

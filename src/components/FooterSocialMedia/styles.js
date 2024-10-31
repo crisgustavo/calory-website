@@ -20,7 +20,7 @@ export const DefaultFooterSocialMedia = styled.div `
         }
     }
 
-    @media(max-width: 800px) {
+    @media(max-width: 850px) {
         margin-right: 15px;
 
         img {
