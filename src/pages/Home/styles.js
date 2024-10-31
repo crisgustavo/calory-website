@@ -387,5 +387,6 @@ export const Content1 = styled.div `
 
     @media(max-width: 800px) {
         border-radius: 25px;
+        margin-left: 0.5%;
     }
 `
