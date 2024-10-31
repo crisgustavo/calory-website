@@ -69,7 +69,7 @@ export const MenuNavigator = styled.nav `
 
 export const LogoNewTopBar = styled.img `
     width: 15%;
-    
+    filter: drop-shadow(0px 0px 1px black);
     margin-right: 1.5%;
 
     &:hover {

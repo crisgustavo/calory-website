@@ -30,6 +30,7 @@ export const BudgetInfo = styled.div `
     gap: 5px;
     justify-content: center;
     box-shadow: 1px 2px 5px 1px black;
+    text-shadow: 1px 1px 2px gray;
 `               
 
 export const BudgetTitle = styled.h3 `
@@ -58,16 +59,14 @@ export const BudgetButton = styled.button `
     border: 1px #ffffff;
     border-radius: 5cap;
     padding: 5px;
-    //background: linear-gradient(180deg, #ffffff7c 0%, #9c9c9c 100%);
     background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
     color: #FFFFFF;
     text-align: center;
     min-width: max-content;
     font-size: 100%;
+    box-shadow: 1px 1px 5px 1px black;
 
     &:hover{
-        //background: linear-gradient(180deg, #4c2cff7c 0%, #2000d8 100%);
-        //background: linear-gradient(180deg, rgba(82,165,231,1) 0%, rgba(39,70,166,1) 46%, rgba(2,41,160,1) 68%);
         cursor: pointer;
         transition: 0.5s;
         transition-property: font-size;
@@ -92,7 +91,8 @@ export const ButtonWhatsapp = styled.img `
     grid-area: bt;
     align-self: center;
     justify-self: center;
-    
+    filter: drop-shadow(2px 2px 3px black);
+
     @media(max-width: 800px) {
         width: 90%;
     }
@@ -169,6 +169,7 @@ export const DefaultWhatsapp = styled.img `
     bottom: 2%;
     z-index: 10;
     cursor: pointer;
+    filter: drop-shadow(2px 2px 3px black);
 
     &:hover {
         opacity: 0.7;
@@ -181,6 +182,7 @@ export const DefaultWhatsapp = styled.img `
     @media(max-width: 800px) {
         visibility: hidden;
     }
+    
 `
 
 /*
@@ -321,6 +323,7 @@ export const BannerText = styled.div `
     align-items: center;
     justify-content: center;
     gap: 4%;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px black;
 
     @media(max-width: 800) {
         width: 60%;
@@ -328,11 +331,11 @@ export const BannerText = styled.div `
 `
 
 export const BannerH1 = styled.h1 `
-    background-image: linear-gradient(180deg, #FFFFFF 31%, rgba(61,123,175,1) 55%, #FFFFFF 81%);
+    /*background-image: linear-gradient(180deg, #FFFFFF 31%, rgba(61,123,175,1) 55%, #FFFFFF 81%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    -webkit-text-fill-color: transparent;*/
+    color: #FFFFFF;
     margin-left: 5%;
     font-size: 250%;
 
@@ -379,14 +382,61 @@ export const Content1 = styled.div `
     border-radius: 50px;
     background-color: #FFFFFF;
     width: 98%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     margin-left: 1%;
-    padding: 2% 0%;
+    padding: 2% 5%;
     justify-self: center;
     box-shadow: 1px 2px 5px 1px black;
+    display: flex;
+
+    justify-content: space-around;
 
     @media(max-width: 800px) {
         border-radius: 25px;
         margin-left: 0%;
     }
 `
+
+export const ContentInfo1 = styled.div `
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: linear-gradient(180deg, rgba(54,153,255,1) 0%, rgba(198,226,255,1) 85%, rgba(255,255,255,1) 100%);
+    border-radius: 20px;
+    gap: 10px;
+    margin-bottom: 2%;
+    padding: 10px;
+
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+`
+
+export const ContentInfoHead = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+`
+
+export const ContentInfoBody = styled.div `
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    text-align: center;
+`
+
+export const ContentIcon = styled.img `
+    width: 40px;
+    filter: drop-shadow(1px 1px 2px black);
+`
+
+export const ContentHeadTitle = styled.h1 `
+    font-size: 25px;
+`
+
+export const ContentInfoBodyP = styled.p `
+    text-align: left;
+    line-height: 20px;
+`
+
+

@@ -7,6 +7,7 @@ export const DefaultWhatsapp = styled.img `
     bottom: 2%;
     z-index: 10;
     cursor: pointer;
+    filter: drop-shadow(1px 1px 2px black);
 
     &:hover {
         opacity: 0.7;
