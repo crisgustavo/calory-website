@@ -403,7 +403,8 @@ export const ContentInfo1 = styled.div `
     display: flex;
     flex-direction: column;
     width: 30%;
-    background: linear-gradient(180deg, rgba(54,153,255,1) 0%, rgba(198,226,255,1) 85%, rgba(255,255,255,1) 100%);
+    //background: linear-gradient(180deg, rgba(54,153,255,1) 0%, rgba(198,226,255,1) 85%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,42,175,0.88) 0%, rgba(182,192,255,0.80) 82%, rgba(255,255,255,0) 100%);
     border-radius: 20px;
     gap: 10px;
     margin-bottom: 2%;
