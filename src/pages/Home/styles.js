@@ -293,7 +293,11 @@ export const BannerImg = styled.div `
     }
 `
 export const IMGBanner = styled.img `
-    
+    width: 100%;
+
+    @media(max-width: 800px) {
+        width: 150%;
+    }
 `
 //SE FOR BANNER FUNDO
 /*export const BannerImg = styled.div `
