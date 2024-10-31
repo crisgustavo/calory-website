@@ -18,7 +18,6 @@ import {
     BannerImg,
     BannerH1,
     BannerP,
-    BannerH2,
     BackgroundGradient,
     BannerText,
     IMGBanner,
@@ -28,7 +27,9 @@ import {
     ContentInfoBody,
     ContentIcon,
     ContentHeadTitle,
-    ContentInfoBodyP
+    ContentInfoBodyP,
+    Content1Title,
+    Content1List
 } from "./styles"
 
 import whatsappicon from '../../assets/images/icons/whatsapp.png'
@@ -102,7 +103,7 @@ function Home() {
                 <Banner>
 
                     <BannerText>
-                        <BannerH1>Transforme sua gestão com nossos <b>SISTEMAS EMPRESARIAIS!</b></BannerH1>
+                        <BannerH1>Transforme sua gestão com nossos<br/> <b>Sistemas Empresariais!</b></BannerH1>
 
                         <BannerP>Temos a melhor solução para organizar e aumentar o faturamento do seu negócio com todo treinamento e suporte de uma equipe de ponta!</BannerP>
                     </BannerText>
@@ -113,8 +114,20 @@ function Home() {
 
                 </Banner>
 
+                <Content>
+                    <BudgetInfo>
+                        <BudgetTitle>Ligue agora ou chame no whatsapp
+                            <BudgetTitleSpan>(44) 99993-9313</BudgetTitleSpan></BudgetTitle>
+                        <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
+                        <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
+                        <ButtonWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
+                    </BudgetInfo>
+                </Content>
+
 
                 <Content1>
+                    <Content1Title>Nossos Serviços</Content1Title>
+                    <Content1List>
                     <ContentInfo1>
                         <ContentInfoHead>
                             <ContentIcon src={empresa}/>
@@ -156,17 +169,10 @@ function Home() {
                             </ContentInfoBodyP>
                         </ContentInfoBody>
                     </ContentInfo1>
+                    </Content1List>
                 </Content1>
 
-                <Content>
-                    <BudgetInfo>
-                        <BudgetTitle>Ligue agora ou chame no whatsapp
-                            <BudgetTitleSpan>(44) 99993-9313</BudgetTitleSpan></BudgetTitle>
-                        <BudgetText>Nossos consultores terão o maior prazer em trazer a solução para o seu empreendimento</BudgetText>
-                        <BudgetButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20adquirir%20um%20de%20seus%20softwares', '_blank')}>Orçamento já!</BudgetButton>
-                        <ButtonWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
-                    </BudgetInfo>
-                </Content>
+                
 
                 <DefaultWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
             </BackgroundGradient>

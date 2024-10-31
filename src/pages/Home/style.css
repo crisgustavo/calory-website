@@ -3,27 +3,52 @@
     opacity: 0;
 }
 
-.menu.active {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s linear;
-    display: initial;
+.menu-button {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }
 
 
 @media (max-width: 800px) {
     .menu-bar.active {
-            height: 150px;
+            height: 100px;
             transition: 0.5s linear;
             overflow: hidden;
         }
+
+    .menu-button {
+        opacity: 1;
+        visibility: visible;
+        display: contents;
+    }
+
+    .menu.active {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s linear;
+        display: initial;
+    }
+
+    .menu {
+        opacity: 0;
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
     .menu-bar.active {
-        height: 150px;
+        height: 115px;
         transition: 0.5s linear;
         overflow: hidden;
+    }
+}
+
+@media (min-width: 800px) {
+    .menu-bar {
+        visibility: visible;
+        opacity: 1;
+        display: content;
     }
 }
 
@@ -33,10 +58,9 @@
     transition: 0.5s linear;
 }
 
-.menu {
-    opacity: 0;
-    display: none;
-}
+
+
+
 
 /*.item {
     width: 31%;

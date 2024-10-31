@@ -30,7 +30,6 @@ export const BudgetInfo = styled.div `
     gap: 5px;
     justify-content: center;
     box-shadow: 1px 2px 5px 1px black;
-    text-shadow: 1px 1px 2px gray;
 `               
 
 export const BudgetTitle = styled.h3 `
@@ -263,7 +262,7 @@ export const LogoNewTopBar = styled.img `
 export const Banner = styled.div `
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     height: 500px;
     z-index: 2;
@@ -274,9 +273,14 @@ export const Banner = styled.div `
     @media(max-width: 800px) {
         height: 300px;
     }
+
     @media(max-width: 500px) {
-        height: 200px;
-        margin: 0px 0px 12px;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        margin: 0px 0px 20px;
+        padding: 20px 0 0 0;
+        gap: 0;
     }
 `
 
@@ -285,22 +289,18 @@ export const BannerImg = styled.div `
     width: 30%;
     display: flex;
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 15px;
     box-shadow: 1px 2px 5px 1px black;
     position: relative;
     top: 10px;
 
     @media(max-width: 800px) {
-        border-radius: 20px;
-        top: 6px;
+        border-radius: 10px;
+        top: 10px;
     }
 `
 export const IMGBanner = styled.img `
-    width: 100%;
 
-    @media(max-width: 800px) {
-        width: 150%;
-    }
 `
 //SE FOR BANNER FUNDO
 /*export const BannerImg = styled.div `
@@ -324,16 +324,15 @@ export const IMGBanner = styled.img `
 `*/
 
 export const BannerText = styled.div `
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4%;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px black;
 
-    @media(max-width: 800) {
-        width: 60%;
+    @media(max-width: 800px) {
+        width: 90%;
     }
 `
 
@@ -346,60 +345,64 @@ export const BannerH1 = styled.h1 `
     margin-left: 5%;
     font-size: 250%;
 
-    @media(max-width: 900px) {
+    b{
+        color: #729dff;
+    }
+
+    @media(max-width: 800px) {
         font-size: 180%;
     }
 
     @media(max-width: 600px) {
-        font-size: 100%;
-    }
-`
-
-export const BannerH2 = styled.h2 `
-    margin-left: 5%;
-    
-    font-size: 175%;
-    color: rgb(0, 35, 66);
-
-    @media(max-width: 900px){
-        font-size: 100%;
-    }
-
-    @media(max-width: 600px) {
-        font-size: 70%;
+        font-size: 140%;
     }
 `
 
 export const BannerP = styled.p `
     margin-left: 5%;
-    color: #aad4ff;
+    color: #FFFFFF;
 
     font-size: 100%;
-    font-weight: 500;
+    font-weight: 400;
 
-    @media(max-width: 900px) {
-        font-size: 66%;
-    }
-
-    @media(max-width: 600px) {
-        font-size: 55%;
+    @media(max-width: 800px) {
+        font-size: 80%;
     }
 `
 export const Content1 = styled.div `
-    border-radius: 50px;
+    border-radius: .3cap;
     background-color: #FFFFFF;
     width: 98%;
     margin-bottom: 1%;
     margin-left: 1%;
     padding: 2% 5%;
     justify-self: center;
-    box-shadow: 1px 2px 5px 1px black;
     display: flex;
+    flex-direction: column;
 
+
+    @media(max-width: 800px) {
+        margin-left: 0%;
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+`
+
+export const Content1Title = styled.h1 `
+    text-align: center;
+    color: navy;
+    margin-bottom: 20px;
+
+    @media(max-width: 800px){
+        margin: 15px 0;
+    }
+`
+
+export const Content1List = styled.div`
+    display: flex;
     justify-content: space-around;
 
     @media(max-width: 800px) {
-        border-radius: 25px;
         margin-left: 0%;
         flex-direction: column;
         margin-bottom: 2%;
@@ -411,14 +414,15 @@ export const ContentInfo1 = styled.div `
     flex-direction: column;
     width: 30%;
     //background: linear-gradient(180deg, rgba(54,153,255,1) 0%, rgba(198,226,255,1) 85%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(180deg, rgba(0,42,175,0.85) 0%, rgba(182,192,255,0.80) 64%, rgba(255,255,255,0) 100%);
-    border-radius: 20px;
+    //background: linear-gradient(180deg, rgba(0,42,175,0.85) 0%, rgba(182,192,255,0.80) 64%, rgba(255,255,255,0) 100%);
+    background: rgba(0,42,175,0.85);
+    border-radius: .3cap;
     gap: 10px;
     margin-bottom: 2%;
     padding: 10px;
 
     color: #FFFFFF;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+    
 
     @media(max-width: 800px) {
         width: 100%;
@@ -442,7 +446,7 @@ export const ContentInfoBody = styled.div `
 
 export const ContentIcon = styled.img `
     width: 40px;
-    filter: drop-shadow(1px 1px 2px black);
+    
 `
 
 export const ContentHeadTitle = styled.h1 `

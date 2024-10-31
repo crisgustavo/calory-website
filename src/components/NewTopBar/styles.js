@@ -24,7 +24,7 @@ export const MenuBar = styled.div `
     @media(max-width: 500px) {
         align-items: center;
         padding: 0px 10px;
-        height: 40px;
+        height: 30px;
     }
 `
 
@@ -36,7 +36,6 @@ export const MenuButton = styled.button `
     padding: 2px;
     width: max-content;
     cursor: pointer;
-    grid-area: menubt;
 `
 
 export const NavigatorContent = styled.div `
@@ -59,7 +58,6 @@ export const MenuButtonImg = styled.img `
 `
 
 export const MenuNavigator = styled.nav `
-    grid-area: menunav;
 
     @media(max-width: 800px) {
         height: max-content;
@@ -69,8 +67,7 @@ export const MenuNavigator = styled.nav `
 
 export const LogoNewTopBar = styled.img `
     width: 15%;
-    filter: drop-shadow(0px 0px 1px black);
-    margin-right: 1.5%;
+    margin: -10px 1.5% -10px;
 
     &:hover {
         cursor: pointer;
@@ -84,10 +81,12 @@ export const LogoNewTopBar = styled.img `
 
     @media(max-width: 850px) {
         width: 20%;
+        
     }
 
     @media(max-width: 500px) {
         width: 25%;
         margin-right: 10px;
+        margin: -15px 10% -15px;
     } 
 `

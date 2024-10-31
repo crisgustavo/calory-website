@@ -7,4 +7,8 @@ export const DefaultTopBar = styled.div`
     justify-content: space-between;
     padding: 5px;
     width: 100%;
+
+    @media(max-width: 800px) {
+        padding: 0 5px;
+    }
 `

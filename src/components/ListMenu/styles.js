@@ -7,7 +7,6 @@ export const DefaultListMenu = styled.ul `
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
     font-weight: 500;
     color: rgb(92, 92, 92);
 
@@ -15,26 +14,23 @@ export const DefaultListMenu = styled.ul `
         font-size: 80%;
         gap: 5px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     @media(max-width: 800px) {
         display: grid;
         grid-template-columns: max-content;
         font-size: 50%;
-        gap: 10px;
         height: max-content;
         overflow: visible;
     }
 
     @media (max-width: 500px) {
-        display: grid;
-        grid-template-columns: max-content;
+        display: flex;
+        flex-direction: column;
         font-size: 35%;
-        gap: 10px;
         height: max-content;
         overflow: visible;
-        padding: 10px;
         margin-left: -5%;
     }
 `
