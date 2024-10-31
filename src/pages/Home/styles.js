@@ -276,7 +276,7 @@ export const Banner = styled.div `
     }
     @media(max-width: 500px) {
         height: 200px;
-        margin: 0px 0px 8px;
+        margin: 0px 0px 16px;
     }
 `
 
@@ -292,6 +292,7 @@ export const BannerImg = styled.div `
 
     @media(max-width: 800px) {
         border-radius: 20px;
+        top: 6px;
     }
 `
 export const IMGBanner = styled.img `
