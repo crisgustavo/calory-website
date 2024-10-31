@@ -268,7 +268,7 @@ export const Banner = styled.div `
     height: 500px;
     z-index: 2;
     gap: 40px;
-    margin: 0px 0px 10px;
+    margin: 0px 0px 20px;
     background-color: navy;
 
     @media(max-width: 800px) {
@@ -287,6 +287,8 @@ export const BannerImg = styled.div `
     overflow: hidden;
     border-radius: 50px;
     box-shadow: 1px 2px 5px 1px black;
+    position: relative;
+    top: 10px;
 
     @media(max-width: 800px) {
         border-radius: 20px;
