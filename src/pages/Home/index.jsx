@@ -10,7 +10,7 @@ import NewTopBar from '../../components/NewTopBar'
 
 
 import {
-    ImgSlider, Content, BudgetInfo,
+    /*ImgSlider,*/ Content, BudgetInfo,
     BudgetText, BudgetButton, BudgetTitle,
     DefaultWhatsapp, BudgetTitleSpan,
     ButtonWhatsapp,
@@ -29,7 +29,12 @@ import {
     ContentHeadTitle,
     ContentInfoBodyP,
     Content1Title,
-    Content1List
+    Content1List,
+    BannerButton,
+    BannerContent,
+    BannerFloat1,
+    BannerFloat2,
+    FloatH1
 } from "./styles"
 
 import whatsappicon from '../../assets/images/icons/whatsapp.png'
@@ -103,15 +108,24 @@ function Home() {
                 <Banner>
 
                     <BannerText>
-                        <BannerH1>Transforme sua gestão com nossos<br/> <b>Sistemas Empresariais!</b></BannerH1>
+                        <BannerH1>Desde 2008 <b>simplificando a gestão de Empreendedores</b> por todo o Brasil</BannerH1>
 
-                        <BannerP>Temos a melhor solução para organizar e aumentar o faturamento do seu negócio com todo treinamento e suporte de uma equipe de ponta!</BannerP>
+                        <BannerP><hr/></BannerP>
+
+                        <BannerButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20testar%20gratuitamente%20seu%20software', '_blank')}>Experimente grátis!</BannerButton>
                     </BannerText>
 
-                    <BannerImg>
-                        <IMGBanner src={banner3} />
-                    </BannerImg>
-
+                    <BannerContent>
+                        <BannerImg>
+                            <IMGBanner src={banner3} />
+                        </BannerImg>
+                        <BannerFloat1>
+                            <FloatH1>+ 1000 Clientes</FloatH1>
+                        </BannerFloat1>
+                        <BannerFloat2>
+                            <FloatH1>Diversos Ramos <br/> de Atividade</FloatH1>
+                        </BannerFloat2>
+                    </BannerContent>
                 </Banner>
 
                 <Content>
@@ -126,7 +140,7 @@ function Home() {
 
 
                 <Content1>
-                    <Content1Title>Nossos Serviços</Content1Title>
+                    <Content1Title>Quais são nossas vantagens?</Content1Title>
                     <Content1List>
                     <ContentInfo1>
                         <ContentInfoHead>
