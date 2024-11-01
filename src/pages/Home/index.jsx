@@ -34,7 +34,13 @@ import {
     BannerContent,
     BannerFloat1,
     BannerFloat2,
-    FloatH1
+    FloatH1,
+    FAQContent,
+    FAQTitle,
+    FAQQuestion,
+    FAQAnswer,
+    FAQParagraph,
+    FAQList
 } from "./styles"
 
 import whatsappicon from '../../assets/images/icons/whatsapp.png'
@@ -110,7 +116,7 @@ function Home() {
                     <BannerText>
                         <BannerH1>Desde 2008 <b>simplificando a gestão de Empreendedores</b> por todo o Brasil</BannerH1>
 
-                        <BannerP><hr/></BannerP>
+                        <BannerP><hr /></BannerP>
 
                         <BannerButton onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Tenho%20interesse%20em%20testar%20gratuitamente%20seu%20software', '_blank')}>Experimente grátis!</BannerButton>
                     </BannerText>
@@ -123,7 +129,7 @@ function Home() {
                             <FloatH1>+ 1000 Clientes</FloatH1>
                         </BannerFloat1>
                         <BannerFloat2>
-                            <FloatH1>Diversos Ramos <br/> de Atividade</FloatH1>
+                            <FloatH1>Diversos Ramos <br /> de Atividade</FloatH1>
                         </BannerFloat2>
                     </BannerContent>
                 </Banner>
@@ -142,54 +148,100 @@ function Home() {
                 <Content1>
                     <Content1Title>Quais são nossas vantagens?</Content1Title>
                     <Content1List>
-                    <ContentInfo1>
-                        <ContentInfoHead>
-                            <ContentIcon src={empresa}/>
-                            <ContentHeadTitle>Sistemas Empresariais</ContentHeadTitle>
-                        </ContentInfoHead>
-                        <ContentInfoBody>
-                            <ContentInfoBodyP>Sistemas empresariais que automatizam processos, reduzem 
-                                erros e economizam tempo. Eles melhoram a comunicação, integram áreas e 
-                                permitem análises precisas, aumentando a eficiência e a produtividade. 
-                                Invista em tecnologia e transforme sua operação!
-                            </ContentInfoBodyP>
-                        </ContentInfoBody>
-                    </ContentInfo1>
+                        <ContentInfo1>
+                            <ContentInfoHead>
+                                <ContentIcon src={empresa} />
+                                <ContentHeadTitle>Sistemas Empresariais</ContentHeadTitle>
+                            </ContentInfoHead>
+                            <ContentInfoBody>
+                                <ContentInfoBodyP>Sistemas empresariais que automatizam processos, reduzem
+                                    erros e economizam tempo. Eles melhoram a comunicação, integram áreas e
+                                    permitem análises precisas, aumentando a eficiência e a produtividade.
+                                    Invista em tecnologia e transforme sua operação!
+                                </ContentInfoBodyP>
+                            </ContentInfoBody>
+                        </ContentInfo1>
 
-                    <ContentInfo1>
-                        <ContentInfoHead>
-                            <ContentIcon src={treinamento}/>
-                            <ContentHeadTitle>Treinamento</ContentHeadTitle>
-                        </ContentInfoHead>
-                        <ContentInfoBody>
-                            <ContentInfoBodyP>Nossos treinamentos são essenciais para garantir que a equipe 
-                                utilize as ferramentas de forma eficiente. Eles aceleram o aprendizado, 
-                                minimizam erros e atendem às necessidades específicas de cada área, 
-                                aumentando a produtividade e otimizando resultados.                                            
-                            </ContentInfoBodyP>
-                        </ContentInfoBody>
-                    </ContentInfo1>
+                        <ContentInfo1>
+                            <ContentInfoHead>
+                                <ContentIcon src={treinamento} />
+                                <ContentHeadTitle>Treinamento</ContentHeadTitle>
+                            </ContentInfoHead>
+                            <ContentInfoBody>
+                                <ContentInfoBodyP>Nossos treinamentos são essenciais para garantir que a equipe
+                                    utilize as ferramentas de forma eficiente. Eles aceleram o aprendizado,
+                                    minimizam erros e atendem às necessidades específicas de cada área,
+                                    aumentando a produtividade e otimizando resultados.
+                                </ContentInfoBodyP>
+                            </ContentInfoBody>
+                        </ContentInfo1>
 
-                    <ContentInfo1>
-                        <ContentInfoHead>
-                            <ContentIcon src={suporte}/>
-                            <ContentHeadTitle>Suporte Técnico</ContentHeadTitle>
-                        </ContentInfoHead>
-                        <ContentInfoBody>
-                            <ContentInfoBodyP>
-                                Nosso suporte técnico online oferece assistência imediata, resolvendo 
-                                problemas rapidamente. Com acesso a especialistas, a equipe pode tirar 
-                                dúvidas e manter a produtividade alta, garantindo confiança na ferramenta.
-                            </ContentInfoBodyP>
-                        </ContentInfoBody>
-                    </ContentInfo1>
+                        <ContentInfo1>
+                            <ContentInfoHead>
+                                <ContentIcon src={suporte} />
+                                <ContentHeadTitle>Suporte Técnico</ContentHeadTitle>
+                            </ContentInfoHead>
+                            <ContentInfoBody>
+                                <ContentInfoBodyP>
+                                    Nosso suporte técnico online oferece assistência imediata, resolvendo
+                                    problemas rapidamente. Com acesso a especialistas, a equipe pode tirar
+                                    dúvidas e manter a produtividade alta, garantindo confiança na ferramenta.
+                                </ContentInfoBodyP>
+                            </ContentInfoBody>
+                        </ContentInfo1>
                     </Content1List>
                 </Content1>
 
-                
+                <FAQContent>
+                    <FAQTitle>Perguntas Frequentes...</FAQTitle>
+
+                    <FAQList>
+                        <FAQQuestion>
+                            <FAQParagraph><b>Cliente: </b>Posso fazer um teste gratuito antes de adquirir o
+                                sistema?</FAQParagraph>
+                        </FAQQuestion>
+                        <FAQAnswer>
+                            <FAQParagraph><b>Calory: </b>Sim, fornecemos teste  grátis por 30 dias.</FAQParagraph>
+                        </FAQAnswer>
+                    </FAQList>
+
+                    <FAQList>
+                        <FAQQuestion>
+                            <FAQParagraph><b>Cliente: </b>O Suporte é robotizado?</FAQParagraph>
+                        </FAQQuestion>
+                        <FAQAnswer>
+                            <FAQParagraph><b>Calory: </b>Não. Nossos atendimentos são todos humanizados.
+                                Atendemos via whatsapp (mensagens, áudios ou ligação), o que for mais conveniente
+                                para o cliente.</FAQParagraph>
+                        </FAQAnswer>
+                    </FAQList>
+
+                    <FAQList>
+                        <FAQQuestion>
+                            <FAQParagraph><b>Cliente: </b>Quais os valores dos planos?</FAQParagraph>
+                        </FAQQuestion>
+                        <FAQAnswer>
+                            <FAQParagraph><b>Calory: </b>Varia da necessidade do cliente. São módulos que juntos
+                                atendem as necessidades de cada cliente.</FAQParagraph>
+                        </FAQAnswer>
+                    </FAQList>
+
+                    <FAQList>
+                        <FAQQuestion>
+                            <FAQParagraph><b>Cliente: </b>Preciso de internet para usar o sistema?</FAQParagraph>
+                        </FAQQuestion>
+                        <FAQAnswer>
+                            <FAQParagraph><b>Calory: </b>Nossos sistemas trabalham tanto online quanto
+                                offline.</FAQParagraph>
+                        </FAQAnswer>
+                    </FAQList>
+
+                </FAQContent>
+
+
 
                 <DefaultWhatsapp src={whatsappicon} onClick={() => window.open('https://wa.me/5544999939313?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20seus%20softwares', '_blank')} />
-            </BackgroundGradient>
+            </BackgroundGradient >
             <Footer />
         </>
     )

@@ -197,11 +197,11 @@ export const Banner = styled.div `
     @media(max-width: 1000px) {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        height: 90vh;
         
         margin: 0px 0px 20px;
         padding: 20px 0 0 0;
-        gap: 0;
     }
 `
 
@@ -211,7 +211,8 @@ export const BannerContent = styled.div `
     width: 30%;
     
     @media(max-width: 1000px){
-        margin-left: 3%;
+        margin-left: 6%;
+        width: 60%;
     }
 `
 
@@ -230,7 +231,7 @@ export const BannerFloat1 = styled.div `
     box-shadow: 1px 1px 5px 1px black;
 
     @media(max-width: 550px) {
-        right: -32%;
+        right: -22%;
         top: 22%;
     }
 `
@@ -250,7 +251,7 @@ export const BannerFloat2 = styled.div `
     box-shadow: 1px 1px 5px 1px black;
 
     @media(max-width: 550px) {
-        left: -40%;
+        left: -33%;
         top: 60%;
     }
 `
@@ -260,11 +261,11 @@ export const FloatH1 = styled.h1 `
     color: navy;
 
     @media(max-width: 1000px) {
-        font-size: 110%;    
+        font-size: 200%;    
     }
 
-    @media(max-width: 550px) {
-        font-size: 70%;    
+    @media(max-width: 650px) {
+        font-size: 110%;    
     }
     
 `
@@ -292,14 +293,19 @@ export const IMGBanner = styled.img `
 
 export const BannerText = styled.div `
     width: 40%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4%;
+    padding: 10% 0 0;
+    gap: 20px;
 
     @media(max-width: 800px) {
-        width: 90%;
+        width: 80%;
+        gap: 20%;
+        padding: 15% 0 0;
+        justify-content: space-evenly;
     }
 `
 
@@ -348,7 +354,7 @@ export const BannerButton = styled.button `
         opacity: 0.7;
     }
 
-    @media(max-width: 800px){
+    @media(max-width: 600px){
         font-size: 120%;
     }
 
@@ -444,4 +450,46 @@ export const ContentInfoBodyP = styled.p `
     line-height: 20px;
 `
 
+export const FAQContent = styled.div `
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 5px;
+    margin: 0px 0px 20px;
+    background-color: #1B6CC2;
+`
 
+export const FAQTitle = styled.h1 `
+    text-align: center;
+    color: #FFFFFF;
+`
+
+export const FAQList = styled.div `
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 5px;
+`
+
+export const FAQQuestion = styled.div `
+    background: #FFFFFF ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+`
+
+export const FAQAnswer = styled.div `
+    background: #FFFFFF ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 3%;
+
+    @media(max-width: 800px) {
+        margin-left: 5%;
+    }
+`
+
+export const FAQParagraph = styled.p `
+    color: navy;
+`
