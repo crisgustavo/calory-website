@@ -291,7 +291,6 @@ export const Banner = styled.div `
 //SE A IMAGEM FOR = BANNER3 
 export const BannerImg = styled.div `
     width: 30%;
-    display: flex;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 1px 2px 5px 1px black;
@@ -304,7 +303,7 @@ export const BannerImg = styled.div `
     }
 `
 export const IMGBanner = styled.img `
-
+    width: 110%
 `
 //SE FOR BANNER FUNDO
 /*export const BannerImg = styled.div `
